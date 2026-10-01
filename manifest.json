@@ -1,0 +1,38 @@
+{
+  "name": "TPNeo",
+  "short_name": "TPNeo",
+  "description": "TPNeo - Neonatal TPN & Fluid Calculator",
+  "id": "tpneo-app-v1",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "dir": "ltr",
+  "lang": "en",
+  "orientation": "any",
+  "categories": [
+    "education",
+    "health",
+    "productivity"
+  ],
+  "icons": [
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}
