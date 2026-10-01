@@ -2042,7 +2042,7 @@ export default function RxCalculator() {
 
     // ---- Weight-band table ----
     const hasDualMode = drug.weightBandTable && drug.doseOptions;
-    const useWeightBand = drug.weightBandTable && (!hasDualMode || row.dosingMode !== "weightband" === false); // fallback strictly to weightband
+    const useWeightBand = drug.weightBandTable && (!hasDualMode || row.dosingMode === "weightband"); // fallback strictly to weightband
 
     if (useWeightBand) {
       if (!weightKg) return { ...base, error: "Enter patient weight." };
