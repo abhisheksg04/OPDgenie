@@ -14,6 +14,10 @@ const DRUGS = [
   // ================= EMERGENCY / RESUSCITATION =================
   {
     id: "epinephrine-im",
+    medExplain: "This is adrenaline. It is the first and most important treatment for a severe allergic reaction (anaphylaxis). / This is an emergency adrenaline pen for a severe allergic reaction.",
+    medWorking: "wheeze, swelling, and faintness should ease within minutes; a second dose may be given after 5 minutes if no improvement. | symptoms ease within minutes; always call emergency services and give the second pen if no improvement in 5 minutes.",
+    medEffects: "transient pallor, tremor, palpitations, anxiety — expected and short-lived; do not withhold for fear of these.; tremor, palpitations, pallor — expected.",
+    medStorage: "protect from light; do not use if discolored.; room temperature, out of light; check expiry regularly.",
     name: "Epinephrine (IM \u2014 anaphylaxis, first-line)",
     category: "Emergency / Resuscitation",
     topicalOnly: true,
@@ -30,6 +34,10 @@ const DRUGS = [
   // ================= ANTIBIOTICS / ANTIVIRALS / ANTIPARASITICS =================
   {
     id: "amoxicillin",
+    medExplain: "This is amoxicillin, an antibiotic for your child's bacterial infection (e.g., ear, throat, or chest).",
+    medWorking: "fever and symptoms usually improve within 48–72 h; return if worse or no better by 48–72 h.",
+    medEffects: "loose stools, nausea, rash.",
+    medStorage: "reconstituted suspension — many brands require refrigeration; check the label and shake well.",
     name: "Amoxicillin (plain)",
     category: "Antibiotics / Antivirals / Antiparasitics",
     minAgeMonths: 3,
@@ -50,6 +58,10 @@ const DRUGS = [
   },
   {
     id: "amoxiclav",
+    medExplain: "This is amoxicillin with clavulanate, a stronger antibiotic for infections such as resistant ear, sinus, or chest infections.",
+    medWorking: "improvement in 48–72 h.",
+    medEffects: "diarrhoea is more common than with plain amoxicillin and rises with dose; also rash, nausea, thrush.",
+    medStorage: "refrigerate the reconstituted suspension; shake well; discard after the labelled period (usually 7–10 days).",
     name: "Amoxicillin-Clavulanate",
     category: "Antibiotics / Antivirals / Antiparasitics",
     minAgeMonths: 0,
@@ -75,6 +87,10 @@ const DRUGS = [
   },
   {
     id: "cefixime",
+    medExplain: "This is cefixime, an antibiotic for infections such as urinary, ear, or throat infections.",
+    medWorking: "improvement in 48–72 h.",
+    medEffects: "loose stools, abdominal pain, rash.",
+    medStorage: "per label; shake well.",
     name: "Cefixime",
     category: "Antibiotics / Antivirals / Antiparasitics",
     minAgeMonths: 2,
@@ -94,6 +110,10 @@ const DRUGS = [
   },
   {
     id: "cefpodoxime",
+    medExplain: "This is cefpodoxime, an antibiotic for ear, sinus, throat, or skin infections.",
+    medWorking: "improvement in 48–72 h.",
+    medEffects: "diarrhoea, nausea, rash.",
+    medStorage: "per label.",
     name: "Cefpodoxime Proxetil",
     category: "Antibiotics / Antivirals / Antiparasitics",
     minAgeMonths: 2,
@@ -110,6 +130,10 @@ const DRUGS = [
   },
   {
     id: "cephalexin",
+    medExplain: "This is cephalexin, an antibiotic mainly for skin and soft-tissue or urinary infections.",
+    medWorking: "improvement in 48–72 h.",
+    medEffects: "loose stools, nausea, rash.",
+    medStorage: "refrigerate reconstituted suspension; shake well.",
     name: "Cephalexin",
     category: "Antibiotics / Antivirals / Antiparasitics",
     minAgeMonths: 0,
@@ -129,6 +153,10 @@ const DRUGS = [
   },
   {
     id: "azithromycin",
+    medExplain: "This is azithromycin, a short-course antibiotic for certain chest, throat, or atypical infections.",
+    medWorking: "improvement over 2–3 days; effect persists after the short course because the drug stays in tissues.",
+    medEffects: "nausea, abdominal cramps, loose stools.",
+    medStorage: "per label; shake well.",
     name: "Azithromycin",
     category: "Antibiotics / Antivirals / Antiparasitics",
     minAgeMonths: 0,
@@ -151,6 +179,10 @@ const DRUGS = [
   },
   {
     id: "clarithromycin",
+    medExplain: "This is clarithromycin, an antibiotic for chest, ear, or sinus infections.",
+    medWorking: "improvement in 48–72 h.",
+    medEffects: "metallic taste, nausea, loose stools.",
+    medStorage: "do not refrigerate reconstituted clarithromycin (gels); store at room temperature, shake well.",
     name: "Clarithromycin",
     category: "Antibiotics / Antivirals / Antiparasitics",
     minAgeMonths: 0,
@@ -167,6 +199,10 @@ const DRUGS = [
   },
   {
     id: "cotrimoxazole",
+    medExplain: "This is co-trimoxazole, an antibiotic for urinary infections and certain other infections.",
+    medWorking: "improvement in 48–72 h.",
+    medEffects: "rash (report promptly — risk of serious skin reactions), nausea, sun sensitivity; ensure good fluid intake.",
+    medStorage: "room temperature; shake well.",
     name: "Co-trimoxazole (Trimethoprim-Sulfamethoxazole)",
     category: "Antibiotics / Antivirals / Antiparasitics",
     minAgeMonths: 2,
@@ -184,6 +220,10 @@ const DRUGS = [
   },
   {
     id: "ofloxacin",
+    medExplain: "This is ofloxacin, a reserve antibiotic used for specific infections.",
+    medWorking: "improvement in 48–72 h.",
+    medEffects: "nausea, headache; rarely joint/tendon complaints — report tendon pain.",
+    medStorage: "room temperature.",
     name: "Ofloxacin",
     category: "Antibiotics / Antivirals / Antiparasitics",
     minAgeMonths: 0,
@@ -201,6 +241,10 @@ const DRUGS = [
   },
   {
     id: "linezolid",
+    medExplain: "This is linezolid, a reserve antibiotic for resistant infections.",
+    medWorking: "per clinical course; used under specialist guidance.",
+    medEffects: "nausea, diarrhoea; prolonged use — low blood counts, numbness/tingling — needs monitoring.",
+    medStorage: "room temperature; protect from light; shake well.",
     name: "Linezolid",
     category: "Antibiotics / Antivirals / Antiparasitics",
     minAgeMonths: 0,
@@ -219,6 +263,10 @@ const DRUGS = [
   },
   {
     id: "ciprofloxacin-systemic",
+    medExplain: "This is ciprofloxacin, a reserve antibiotic for specific infections.",
+    medWorking: "improvement in 48–72 h.",
+    medEffects: "nausea, headache; report tendon or joint pain.",
+    medStorage: "room temperature.",
     name: "Ciprofloxacin (systemic, oral)",
     category: "Antibiotics / Antivirals / Antiparasitics",
     minAgeMonths: 12,
@@ -236,6 +284,10 @@ const DRUGS = [
   },
   {
     id: "moxifloxacin-systemic",
+    medExplain: "This is moxifloxacin, a reserve antibiotic.",
+    medWorking: "improvement in 48–72 h.",
+    medEffects: "nausea; report tendon pain, palpitations.",
+    medStorage: "room temperature.",
     name: "Moxifloxacin (systemic, oral)",
     category: "Antibiotics / Antivirals / Antiparasitics",
     topicalOnly: true,
@@ -246,6 +298,10 @@ const DRUGS = [
   },
   {
     id: "levofloxacin",
+    medExplain: "This is levofloxacin, a reserve antibiotic.",
+    medWorking: "improvement in 48–72 h.",
+    medEffects: "nausea, headache; report tendon/joint pain.",
+    medStorage: "room temperature.",
     name: "Levofloxacin",
     category: "Antibiotics / Antivirals / Antiparasitics",
     minAgeMonths: 6,
@@ -264,6 +320,10 @@ const DRUGS = [
   },
   {
     id: "albendazole",
+    medExplain: "This is albendazole, a deworming medicine.",
+    medWorking: "worms clear over days; a repeat dose in 2–3 weeks is common for threadworm.",
+    medEffects: "mild abdominal pain, nausea, headache.",
+    medStorage: "room temperature; shake suspension.",
     name: "Albendazole (\u00b1 Ivermectin)",
     category: "Antibiotics / Antivirals / Antiparasitics",
     minAgeMonths: 12,
@@ -284,6 +344,10 @@ const DRUGS = [
   },
   {
     id: "fosfomycin",
+    medExplain: "This is fosfomycin, a single-dose antibiotic for uncomplicated urinary infection (older children/adolescents).",
+    medWorking: "urinary symptoms ease over 2–3 days.",
+    medEffects: "diarrhoea, nausea, headache.",
+    medStorage: "room temperature; keep sachet sealed.",
     name: "Fosfomycin Trometamol",
     category: "Antibiotics / Antivirals / Antiparasitics",
     minAgeMonths: 144,
@@ -300,6 +364,10 @@ const DRUGS = [
   },
   {
     id: "oseltamivir",
+    medExplain: "This is oseltamivir, an antiviral for influenza (flu).",
+    medWorking: "most effective when started within 48 h of symptoms; shortens illness by about a day.",
+    medEffects: "nausea and vomiting (common early); rarely transient neuropsychiatric events — supervise.",
+    medStorage: "suspension per label; shake well.",
     name: "Oseltamivir",
     category: "Antibiotics / Antivirals / Antiparasitics",
     minAgeMonths: 0,
@@ -325,6 +393,10 @@ const DRUGS = [
   },
   {
     id: "metronidazole",
+    medExplain: "This is metronidazole, for certain gut/parasitic or anaerobic infections (e.g., giardia, amoebiasis).",
+    medWorking: "improvement over days per indication.",
+    medEffects: "metallic taste, nausea, dark urine (harmless).",
+    medStorage: "room temperature; protect from light.",
     name: "Metronidazole (oral)",
     category: "Antibiotics / Antivirals / Antiparasitics",
     minAgeMonths: 0,
@@ -334,11 +406,11 @@ const DRUGS = [
       { id: "anaerobic", label: "Anaerobic infection: 30mg/kg/day \u00f7Q6h x7-10 days", low: 30, high: 30, freq: 4, maxDay: 4000, singleDoseMax: 500 },
       { id: "cdiff", label: "C. difficile (nonsevere): 7.5mg/kg/dose (max 500mg) TID-QID x10 days", low: 30, high: 30, freq: 4, maxDay: 2000, singleDoseMax: 500 },
     ],
-    sourceNote: "ADDED AGENT \u2014 not in the uploaded formulary; confirm brand/strength on the shelf. Amebiasis pediatric 35-50mg/kg/day \u00f7TID (max 2,250mg/day) and anaerobic 30mg/kg/day \u00f7q6h (max 4g/day) per the FDA metronidazole/Flagyl labels. Giardiasis 15mg/kg/day \u00f7TID x5-7 days (not FDA-approved for this indication but the most widely used therapy; 80-100% efficacy per AAP Red Book 2024-2027); tinidazole or nitazoxanide are better-tolerated single-/short-course alternatives. C. difficile nonsevere 7.5mg/kg/dose (max 500mg) TID-QID x10 days per IDSA/SHEA via Shirley et al., Pediatrics, 2023 \u2014 oral vancomycin is now often preferred over metronidazole for CDI.",
+    sourceNote: "UPDATE: Metrogyl and Flagyl are both now confirmed in the pharmacy formulary (brands/strengths corrected below -- Metrogyl suspension is 200mg/5mL, not the 100mg/5mL previously listed; Flagyl is tablet-only, no suspension form found). Dosing itself: amebiasis pediatric 35-50mg/kg/day \u00f7TID (max 2,250mg/day) and anaerobic 30mg/kg/day \u00f7q6h (max 4g/day) per the FDA metronidazole/Flagyl labels. Giardiasis 15mg/kg/day \u00f7TID x5-7 days (not FDA-approved for this indication but the most widely used therapy; 80-100% efficacy per AAP Red Book 2024-2027); tinidazole or nitazoxanide are better-tolerated single-/short-course alternatives. C. difficile nonsevere 7.5mg/kg/dose (max 500mg) TID-QID x10 days per IDSA/SHEA via Shirley et al., Pediatrics, 2023 \u2014 oral vancomycin is now often preferred over metronidazole for CDI.",
     defaultDurationDays: 7,
     brands: [
-      { name: "Metrogyl", manufacturer: "JB Pharma", strengths: [{ mgPer5ml: 100, displayLabel: "100mg/5mL (benzoate) suspension" }, { tabletMg: 200, displayLabel: "200mg tablet" }, { tabletMg: 400, displayLabel: "400mg tablet" }] },
-      { name: "Flagyl", manufacturer: "Abbott", strengths: [{ mgPer5ml: 200, displayLabel: "200mg/5mL suspension \u2014 verify strength on pack" }, { tabletMg: 400, displayLabel: "400mg tablet" }] },
+      { name: "Metrogyl", manufacturer: "JB Chemicals", strengths: [{ mgPer5ml: 200, displayLabel: "CORRECTED from the pharmacy formulary: 200mg/5mL suspension (was previously listed as 100mg/5mL -- a 2-fold error)" }, { tabletMg: 600, displayLabel: "Metrogyl ER 600mg (extended-release) -- the formulary shows this specific strength, not plain 200mg/400mg tablets; confirm if an immediate-release tablet is also stocked before splitting the ER form" }] },
+      { name: "Flagyl", manufacturer: "Abbott", strengths: [{ tabletMg: 200, displayLabel: "200mg tablet" }, { tabletMg: 400, displayLabel: "400mg tablet" }] },
     ],
     adminNote: "Give WITH or AFTER food to reduce GI upset and metallic taste. Complete the full course. STRICTLY AVOID ALCOHOL (incl. alcohol-containing syrups/mouthwashes) during and for 48h after \u2014 disulfiram-like reaction. The suspension (benzoate ester) is less bitter but confirm the mg/kg math against the exact labeled strength.",
     precaution: "Reduce dose by 50% in severe (Child-Pugh C) hepatic impairment. Peripheral neuropathy with prolonged/repeated courses.",
@@ -346,6 +418,10 @@ const DRUGS = [
   },
   {
     id: "acyclovir",
+    medExplain: "This is acyclovir, an antiviral for chickenpox or herpes infections.",
+    medWorking: "most effective when started early; reduces severity/duration.",
+    medEffects: "nausea, headache; maintain hydration.",
+    medStorage: "room temperature; shake suspension.",
     name: "Acyclovir (oral)",
     category: "Antibiotics / Antivirals / Antiparasitics",
     minAgeMonths: 24,
@@ -357,8 +433,8 @@ const DRUGS = [
     sourceNote: "ADDED AGENT \u2014 not in the uploaded formulary; confirm brand/strength on the shelf. Chickenpox: 20mg/kg/dose QID (80mg/kg/day, max 3,200mg/day), children \u22652 years, x5 days \u2014 most effective started within 24h of rash; children >40kg take the adult 800mg QID dose (FDA acyclovir label). HSV gingivostomatitis (mild, off-label) and recurrent herpes labialis: 20mg/kg/dose (max 400mg/dose) QID per the pediatric OI guideline (Avira-Arill et al., 2026). SEVERE/disseminated/encephalitis/neonatal HSV requires IV acyclovir \u2014 not this oral entry. The 2-year floor matches the varicella trial/label population; oral bioavailability is poor (valacyclovir is better absorbed where a swallow-capable child allows).",
     defaultDurationDays: 5,
     brands: [
-      { name: "Acivir", manufacturer: "Cipla", strengths: [{ mgPer5ml: 200, displayLabel: "200mg/5mL suspension" }, { tabletMg: 200, displayLabel: "200mg DT" }, { tabletMg: 400, displayLabel: "400mg tablet" }, { tabletMg: 800, displayLabel: "800mg tablet" }] },
-      { name: "Zovirax", manufacturer: "GSK", strengths: [{ tabletMg: 200, displayLabel: "200mg tablet" }, { tabletMg: 400, displayLabel: "400mg tablet" }] },
+      { name: "Acivir", manufacturer: "Cipla", strengths: [{ mgPer5ml: 200, displayLabel: "200mg/5mL suspension -- NOT confirmed in the pharmacy formulary (only cream/injection/dispersible-tablet DT forms were found there, no liquid); treat this concentration as unverified" }, { tabletMg: 200, displayLabel: "200mg DT (dispersible tablet) -- CONFIRMED" }, { tabletMg: 400, displayLabel: "400mg DISTAB -- CONFIRMED" }, { tabletMg: 800, displayLabel: "800mg DISTAB -- CONFIRMED" }] },
+      { name: "Zovirax", manufacturer: "GSK", strengths: [{ mgPer5ml: 400, displayLabel: "NEW, CONFIRMED from the pharmacy formulary: 400mg/5mL suspension (100mL) -- a genuine liquid option, more concentrated than Acivir's unconfirmed 200mg/5mL" }, { tabletMg: 400, displayLabel: "400mg tablet \u2014 CONFIRMED (standard, not dispersible)" }] },
     ],
     adminNote: "With or without food; MAINTAIN GOOD HYDRATION throughout (crystalluria/renal risk if volume-depleted). Space the 4 daily doses evenly while awake. Start as early as possible \u2014 within 24h of varicella rash for benefit.",
     precaution: "Dose-reduce in renal impairment (adjust by creatinine clearance). Oral acyclovir is for mild/immunocompetent disease only \u2014 escalate to IV for severe, disseminated, CNS, neonatal, or immunocompromised HSV/VZV.",
@@ -366,6 +442,10 @@ const DRUGS = [
   },
   {
     id: "nystatin-oral",
+    medExplain: "This is nystatin, for oral thrush (white patches in the mouth).",
+    medWorking: "patches clear over several days.",
+    medEffects: "rarely nausea; well tolerated.",
+    medStorage: "room temperature; shake well.",
     name: "Nystatin (oral suspension, oral thrush)",
     category: "Antibiotics / Antivirals / Antiparasitics",
     topicalOnly: true,
@@ -380,6 +460,10 @@ const DRUGS = [
   },
   {
     id: "fluconazole",
+    medExplain: "This is fluconazole, an antifungal for thrush or other fungal infections.",
+    medWorking: "improvement over days.",
+    medEffects: "nausea, abdominal pain, rash.",
+    medStorage: "room temperature; shake suspension.",
     name: "Fluconazole (oral, candidiasis)",
     category: "Antibiotics / Antivirals / Antiparasitics",
     minAgeMonths: 6,
@@ -387,11 +471,10 @@ const DRUGS = [
       { id: "opc", label: "Oropharyngeal candidiasis: 6mg/kg day 1, then 3mg/kg once daily x\u226514 days", low: 3, high: 6, freq: 1, maxDay: 200 },
       { id: "esophageal", label: "Esophageal candidiasis: 6mg/kg day 1, then 3-12mg/kg once daily x\u226521 days", low: 3, high: 12, freq: 1, maxDay: 400 },
     ],
-    sourceNote: "ADDED AGENT \u2014 not in the uploaded formulary; confirm brand/strength on the shelf. Oropharyngeal candidiasis \u22656 months: 6mg/kg on day 1 (loading), then 3mg/kg once daily for \u226514 days (FDA fluconazole oral-suspension label; Downes et al., Paediatr Drugs, 2020). Esophageal: 6mg/kg day 1 then 3mg/kg once daily, up to 12mg/kg/day by response, \u226521 days and \u22652 weeks past symptom resolution. The slider shows the MAINTENANCE 3mg/kg once-daily figure \u2014 give the 6mg/kg loading dose on day 1 separately (see admin note). Neonates (<1 month) dose differently (loading 25mg/kg then 12mg/kg/day for invasive disease) \u2014 not covered by this \u22656-month entry.",
+    sourceNote: "CORRECTION from the pharmacy formulary: Zocon does not appear there at all -- the actual stocked brand is Forcan (Cipla), confirmed at 50mg capsule, 150mg tablet, and 200mg tablet (plus a 200mg IV infusion, not relevant here). IMPORTANT GAP: no liquid/suspension form was found for fluconazole under EITHER brand -- only solid dosage forms. This is a real practical problem for a young child who can't swallow a capsule/tablet; the 50mg capsule can be opened and the powder mixed with food/liquid (a common workaround) but confirm this is actually feasible/acceptable before relying on it, rather than assuming a suspension exists. Oropharyngeal candidiasis \u22656 months: 6mg/kg on day 1 (loading), then 3mg/kg once daily for \u226514 days (FDA fluconazole oral-suspension label; Downes et al., Paediatr Drugs, 2020). Esophageal: 6mg/kg day 1 then 3mg/kg once daily, up to 12mg/kg/day by response, \u226521 days and \u22652 weeks past symptom resolution. The slider shows the MAINTENANCE 3mg/kg once-daily figure \u2014 give the 6mg/kg loading dose on day 1 separately (see admin note). Neonates (<1 month) dose differently (loading 25mg/kg then 12mg/kg/day for invasive disease) \u2014 not covered by this \u22656-month entry.",
     defaultDurationDays: 14,
     brands: [
-      { name: "Zocon", manufacturer: "FDC", strengths: [{ mgPer5ml: 50, displayLabel: "50mg/5mL suspension" }, { tabletMg: 50, displayLabel: "50mg tablet" }, { tabletMg: 150, displayLabel: "150mg tablet" }] },
-      { name: "Forcan", manufacturer: "Cipla", strengths: [{ tabletMg: 50, displayLabel: "50mg tablet" }, { tabletMg: 150, displayLabel: "150mg tablet" }] },
+      { name: "Forcan", manufacturer: "Cipla", strengths: [{ tabletMg: 50, displayLabel: "50mg capsule -- CONFIRMED; opening the capsule is a possible workaround for a child who can't swallow it, not a verified standard practice" }, { tabletMg: 150, displayLabel: "150mg tablet -- CONFIRMED" }, { tabletMg: 200, displayLabel: "200mg tablet -- CONFIRMED" }] },
     ],
     adminNote: "GIVE THE 6mg/kg LOADING DOSE ON DAY 1, then 3mg/kg once daily from day 2 \u2014 the calculator shows the maintenance dose, so double it for the first dose. With or without food, same time each day. Treat for at least 2 weeks (OPC) / 3 weeks and \u22652 weeks past symptom resolution (esophageal).",
     precaution: "QT-prolongation risk and many CYP interactions (hepatically cleared drugs) \u2014 review co-medications. Monitor LFTs with prolonged use.",
@@ -399,6 +482,10 @@ const DRUGS = [
   },
   {
     id: "mebendazole",
+    medExplain: "This is mebendazole, a deworming medicine.",
+    medWorking: "worms clear over days.",
+    medEffects: "mild abdominal discomfort.",
+    medStorage: "room temperature.",
     name: "Mebendazole",
     category: "Antibiotics / Antivirals / Antiparasitics",
     minAgeMonths: 12,
@@ -407,7 +494,7 @@ const DRUGS = [
       { id: "sti-3day", label: "Ascaris/hookworm/whipworm: 100mg BID x3 days", low: 100, high: 100, freq: 2, maxDay: 200, isDirectMgOption: true },
       { id: "single-500", label: "Ascaris/hookworm (alternative): 500mg ONCE", low: 500, high: 500, freq: 1, maxDay: 500, isDirectMgOption: true, singleCourse: true },
     ],
-    sourceNote: "ADDED AGENT \u2014 not in the uploaded formulary; confirm brand/strength on the shelf. Fixed (not weight-based) dosing per Sanchez-Vegas & Villavicencio, Pediatrics in Review, 2022 and the FDA Vermox label: pinworm 100mg once then repeat in 2 weeks; roundworm/hookworm/whipworm 100mg BID x3 days OR 500mg once. Safety/effectiveness NOT established below 1 year (convulsions reported in infants) \u2014 hence the 12-month floor. Albendazole (already in the app) is an equivalent benzimidazole alternative.",
+    sourceNote: "CHECKED against the pharmacy formulary specifically: mebendazole does NOT appear under any brand or generic search -- genuinely not stocked, not just an export gap (confirmed by direct generic-name search, not just a brand-name miss). Albendazole (already in the app, and confirmed stocked) is the practical substitute. Dosing itself, if this is ever sourced elsewhere: fixed (not weight-based) per Sanchez-Vegas & Villavicencio, Pediatrics in Review, 2022 and the FDA Vermox label -- pinworm 100mg once then repeat in 2 weeks; roundworm/hookworm/whipworm 100mg BID x3 days OR 500mg once. Safety/effectiveness NOT established below 1 year (convulsions reported in infants) \u2014 hence the 12-month floor.",
     defaultDurationDays: 3,
     brands: [
       { name: "Mebex", manufacturer: "Cipla", strengths: [{ mgPer5ml: 100, displayLabel: "100mg/5mL suspension" }, { tabletMg: 100, displayLabel: "100mg chewable tablet" }] },
@@ -417,6 +504,10 @@ const DRUGS = [
   },
   {
     id: "pyrantel",
+    medExplain: "This is pyrantel, a deworming medicine.",
+    medWorking: "worms clear over days.",
+    medEffects: "mild nausea, abdominal cramps, headache.",
+    medStorage: "room temperature; shake well.",
     name: "Pyrantel Pamoate",
     category: "Antibiotics / Antivirals / Antiparasitics",
     minAgeMonths: 12,
@@ -424,7 +515,7 @@ const DRUGS = [
       { id: "pinworm", label: "Pinworm: 11mg/kg ONCE (max 1g), REPEAT in 2 weeks", low: 11, high: 11, freq: 1, maxDay: 1000, singleDoseMax: 1000, singleCourse: true },
       { id: "ascaris", label: "Ascaris/hookworm: 11mg/kg once daily (max 1g) x3 days", low: 11, high: 11, freq: 1, maxDay: 1000, singleDoseMax: 1000 },
     ],
-    sourceNote: "ADDED AGENT \u2014 not in the uploaded formulary; confirm brand/strength on the shelf. 11mg/kg (max 1g) \u2014 single dose repeated in 2 weeks for pinworm, or once daily x3 days for roundworm/hookworm (Sanchez-Vegas & Villavicencio, Pediatrics in Review, 2022; WHO essential-medicines list). A depolarising neuromuscular agent (worm paralysis) \u2014 do NOT combine with piperazine (antagonistic). Safety not formally established in children; used >1 year in preventive-chemotherapy programmes.",
+    sourceNote: "CHECKED against the pharmacy formulary specifically: pyrantel does NOT appear under any brand or generic search -- genuinely not stocked. Albendazole or (where appropriate) mebendazole-class alternatives are the practical substitute, noting mebendazole itself is also not stocked here. Dosing itself, if sourced elsewhere: 11mg/kg (max 1g) \u2014 single dose repeated in 2 weeks for pinworm, or once daily x3 days for roundworm/hookworm (Sanchez-Vegas & Villavicencio, Pediatrics in Review, 2022; WHO essential-medicines list). A depolarising neuromuscular agent (worm paralysis) \u2014 do NOT combine with piperazine (antagonistic).",
     defaultDurationDays: 1,
     brands: [
       { name: "Nemocid", manufacturer: "Ipca", strengths: [{ mgPer5ml: 250, displayLabel: "250mg/5mL suspension" }, { tabletMg: 250, displayLabel: "250mg tablet" }] },
@@ -434,13 +525,17 @@ const DRUGS = [
   },
   {
     id: "griseofulvin",
+    medExplain: "This is griseofulvin, for scalp ringworm (tinea capitis), which needs weeks of treatment.",
+    medWorking: "slow — expect several weeks (6–8+); do not stop early.",
+    medEffects: "nausea, headache, photosensitivity.",
+    medStorage: "room temperature.",
     name: "Griseofulvin (oral, tinea capitis)",
     category: "Antibiotics / Antivirals / Antiparasitics",
     minAgeMonths: 24,
     doseOptions: [
       { id: "tinea-capitis", label: "Tinea capitis (microsize): 20-25mg/kg once daily (max 1g) x6-8 weeks", low: 20, high: 25, freq: 1, maxDay: 1000 },
     ],
-    sourceNote: "ADDED AGENT \u2014 not in the uploaded formulary; confirm brand/strength on the shelf. Microsize griseofulvin 20-25mg/kg/day (max 1g) once daily for \u22656-8 weeks (or 2 weeks past clinical+mycological cure) \u2014 oral therapy is MANDATORY for tinea capitis because topical antifungals cannot penetrate the hair shaft. Preferred over terbinafine for Microsporum spp.; terbinafine is superior for Trichophyton spp. (Gupta & Drummond-Main, Pediatr Dermatol, 2012). Dose figure is the microsize formulation \u2014 ultramicrosize uses a lower mg/kg; verify which the pack contains.",
+    sourceNote: "CHECKED against the pharmacy formulary specifically: griseofulvin does NOT appear under any brand or generic search -- genuinely not stocked (Grisovin FP below is an unconfirmed brand guess). Terbinafine (now confirmed stocked as Sebifin, see that entry) is the practical substitute, though it's the better choice for Trichophyton and the weaker choice for Microsporum -- a real clinical trade-off if Microsporum is suspected and griseofulvin can't be sourced. Dosing itself, if sourced elsewhere: microsize griseofulvin 20-25mg/kg/day (max 1g) once daily for \u22656-8 weeks. Preferred over terbinafine for Microsporum spp.; terbinafine is superior for Trichophyton spp. (Gupta & Drummond-Main, Pediatr Dermatol, 2012).",
     defaultDurationDays: 42,
     brands: [
       { name: "Grisovin FP", manufacturer: "GSK", strengths: [{ tabletMg: 125, displayLabel: "125mg tablet (microsize)" }, { tabletMg: 250, displayLabel: "250mg tablet (microsize)" }] },
@@ -451,6 +546,10 @@ const DRUGS = [
   },
   {
     id: "terbinafine",
+    medExplain: "This is terbinafine, for scalp ringworm.",
+    medWorking: "over 2–6 weeks; complete the course.",
+    medEffects: "GI upset, taste disturbance; rarely liver effects.",
+    medStorage: "room temperature.",
     name: "Terbinafine (oral, tinea capitis)",
     category: "Antibiotics / Antivirals / Antiparasitics",
     minAgeMonths: 24,
@@ -462,11 +561,10 @@ const DRUGS = [
       { maxKg: 40, mg: 125, label: "20-40kg: 125mg once daily" },
       { maxKg: 999, mg: 250, label: ">40kg: 250mg once daily" },
     ],
-    sourceNote: "ADDED AGENT \u2014 not in the uploaded formulary; confirm brand/strength on the shelf. Weight-banded tinea capitis dosing: <20kg 62.5mg, 20-40kg 125mg, >40kg 250mg once daily for 4-6 weeks (Gupta & Drummond-Main, Pediatr Dermatol, 2012). Terbinafine is SUPERIOR to griseofulvin for Trichophyton spp. (the commonest cause) at a lower dose and shorter course; griseofulvin is preferred for Microsporum spp. The 62.5mg band = half of a 125mg tablet.",
+    sourceNote: "CORRECTION from the pharmacy formulary: neither Terbinaforce nor Daskil (previously listed) was found there -- the actual stocked oral terbinafine is Sebifin (Sun Pharma), 250mg tablet ONLY. No 125mg tablet was found, which matters practically: the 62.5mg band was written assuming a 125mg tablet could be halved; with only a 250mg tablet confirmed, reaching 62.5mg now means quartering it, which is far less practical/accurate. Consider whether the <20kg band is achievable with what's actually stocked, or whether griseofulvin (liquid-adjacent, more divisible) is more practical for a younger/smaller child. Weight-banded tinea capitis dosing itself: <20kg 62.5mg, 20-40kg 125mg, >40kg 250mg once daily for 4-6 weeks (Gupta & Drummond-Main, Pediatr Dermatol, 2012). Terbinafine is SUPERIOR to griseofulvin for Trichophyton spp. (the commonest cause) at a lower dose and shorter course; griseofulvin is preferred for Microsporum spp.",
     defaultDurationDays: 42,
     brands: [
-      { name: "Terbinaforce", manufacturer: "Mankind", strengths: [{ tabletMg: 125, displayLabel: "125mg tablet (splittable to 62.5mg)" }, { tabletMg: 250, displayLabel: "250mg tablet" }] },
-      { name: "Daskil", manufacturer: "Micro Labs", strengths: [{ tabletMg: 250, displayLabel: "250mg tablet" }] },
+      { name: "Sebifin", manufacturer: "Sun Pharma", strengths: [{ tabletMg: 250, displayLabel: "250mg tablet \u2014 CONFIRMED stocked strength; quartering needed for the 62.5mg band, halving for the 125mg band" }] },
     ],
     adminNote: "With or without food. Long course \u2014 reinforce adherence; pair with an antifungal shampoo to reduce spore shedding and treat carriers. Confirm the dermatophyte genus where possible, since it determines the better drug.",
     precaution: "Hepatotoxicity (rare) \u2014 consider baseline LFTs and avoid in active/chronic liver disease; taste disturbance can occur. Fewer drug interactions than griseofulvin.",
@@ -474,14 +572,17 @@ const DRUGS = [
   },
   {
     id: "artemether-lumefantrine",
+    medExplain: "This is the antimalarial for uncomplicated falciparum malaria.",
+    medWorking: "fever and parasite load fall over 1–3 days; return if vomiting, worsening, or no improvement.",
+    medEffects: "nausea, dizziness, headache.",
+    medStorage: "room temperature; protect from moisture.",
     name: "Artemether-Lumefantrine (uncomplicated falciparum malaria)",
     category: "Antibiotics / Antivirals / Antiparasitics",
     topicalOnly: true,
     minAgeMonths: 2,
     sig: "UNCOMPLICATED P. falciparum malaria, \u22652 months AND \u22655kg. 20/120mg tablets, 6 doses over 3 days (0h, 8h, then BID mornings+evenings on days 2 and 3), by weight: 5-<15kg = 1 tab/dose (6 total); 15-<25kg = 2 tabs/dose (12 total); 25-<35kg = 3 tabs/dose (18 total); \u226535kg = 4 tabs/dose (24 total). NOT for severe/complicated malaria (that needs parenteral artesunate).",
     brands: [
-      { name: "Coartem / Coartem Dispersible", manufacturer: "Novartis", strengths: [{ displayLabel: "Artemether 20mg + Lumefantrine 120mg tablet (dispersible cherry-flavoured paediatric form available)" }] },
-      { name: "Lumether / Falcynil-LF", manufacturer: "Various", strengths: [{ displayLabel: "Artemether 20mg + Lumefantrine 120mg \u2014 confirm exact strength; 80/480mg adult tablets also exist" }] },
+      { name: "Coartem / Coartem Dispersible", manufacturer: "Novartis", strengths: [{ displayLabel: "Artemether 20mg + Lumefantrine 120mg tablet -- CHECKED against the pharmacy formulary specifically: no oral artemether-lumefantrine product was found under any brand or generic search. The formulary DOES stock IV artesunate (Falcigo, for severe malaria), but apparently not this oral combination for uncomplicated disease -- confirm whether this is genuinely unstocked or just an export gap before relying on this entry." }] },
     ],
     adminNote: "TAKE WITH FOOD containing fat (milk, breast milk, broth) \u2014 lumefantrine absorption is poor on an empty stomach and determines cure. Dispersible tablets dissolve in ~10mL water; may crush standard tablets into water. REPEAT the dose if vomiting occurs within 1-2h. Give the 2nd dose at 8h, then morning+evening on days 2-3 (complete all 6 doses even if better). Confirm the diagnosis parasitologically before treating where feasible.",
     precaution: "QT-prolongation risk \u2014 avoid with other QT-prolonging drugs and in known long-QT/significant cardiac disease. Not established <5kg or <2 months. Avoid in the first trimester of pregnancy unless no alternative (use quinine+clindamycin there).",
@@ -489,6 +590,10 @@ const DRUGS = [
   },
   {
     id: "penicillin-v",
+    medExplain: "This is penicillin V, for strep throat, to prevent complications.",
+    medWorking: "sore throat/fever improve in 24–48 h.",
+    medEffects: "loose stools, rash (report).",
+    medStorage: "refrigerate reconstituted suspension; shake well.",
     name: "Penicillin V (streptococcal pharyngitis)",
     category: "Antibiotics / Antivirals / Antiparasitics",
     minAgeMonths: 0,
@@ -511,9 +616,35 @@ const DRUGS = [
     precaution: "Contraindicated in type-I (immediate) penicillin hypersensitivity \u2014 use a first-generation cephalosporin (non-anaphylactic allergy) or a macrolide/clindamycin (anaphylactic allergy) instead.",
     notes: "Penicillin V is not widely stocked in Indian OPDs \u2014 confirm availability; amoxicillin is the usual practical first-line here.",
   },
+  {
+    id: "faropenem",
+    name: "Faropenem Daloxate (oral penem)",
+    category: "Antibiotics / Antivirals / Antiparasitics",
+    minAgeMonths: 24,
+    medExplain: "This is faropenem, an oral antibiotic from the penem class, used for infections resistant to more common antibiotics.",
+    medWorking: "improvement expected within 48-72h, similar to other beta-lactams.",
+    medEffects: "loose stools, nausea, rash -- same general antibiotic cautions as amoxicillin.",
+    medStorage: "per label; shake suspension well.",
+    doseOptions: [
+      { id: "standard", label: "6mg/kg/dose \u00f7TID (max 300mg/dose)", low: 18, high: 18, freq: 3, maxDay: 900, singleDoseMax: 300 },
+    ],
+    sourceNote: "ADDED AGENT from the master formulary review \u2014 found as Faronem/Faronem-D (Sun Pharma), flagged CLINICAL REVIEW REQUIRED in that audit. Not a routine first-line choice; an oral penem reserved for specific resistant-organism situations, not a general substitute for amoxicillin/cephalosporins. Dose (6mg/kg/dose TID, max 300mg/dose) is the general pediatric penem convention \u2014 verify against current local guidance before use, since this is a less commonly prescribed agent with a thinner pediatric evidence base than the app's other antibiotics.",
+    defaultDurationDays: 7,
+    brands: [
+      { name: "Faronem-D", manufacturer: "Sun Pharma", strengths: [{ displayLabel: "Dry syrup -- exact mg/5mL not confirmed; verify on the dispensed label" }] },
+      { name: "Faronem", manufacturer: "Sun Pharma", strengths: [{ displayLabel: "Syrup -- exact mg/5mL not confirmed; verify on the dispensed label" }] },
+    ],
+    adminNote: "With or without food. Complete the full course.",
+    precaution: "Reserve for situations where more established agents are inappropriate (e.g., confirmed resistance) \u2014 not a routine empiric choice. Thinner pediatric evidence base than this app's other antibiotics; use with appropriate clinical judgment.",
+    notes: "",
+  },
   // ================= ANTIHISTAMINES =================
   {
     id: "cetirizine",
+    medExplain: "This is cetirizine, for allergies, hives, or allergic itch/runny nose.",
+    medWorking: "itching/sneezing ease within 1–2 h.",
+    medEffects: "mild drowsiness, dry mouth.",
+    medStorage: "room temperature.",
     name: "Cetirizine",
     category: "Antihistamines",
     minAgeMonths: 6,
@@ -535,6 +666,10 @@ const DRUGS = [
   },
   {
     id: "levocetirizine",
+    medExplain: "This is levocetirizine, for allergies and hives.",
+    medWorking: "relief within 1–2 h.",
+    medEffects: "mild drowsiness.",
+    medStorage: "room temperature.",
     name: "Levocetirizine",
     category: "Antihistamines",
     minAgeMonths: 24,
@@ -548,6 +683,7 @@ const DRUGS = [
     defaultDurationDays: 7,
     brands: [
       { name: "Xyzal", manufacturer: "Dr Reddy's", strengths: [{ mgPer5ml: 2.5 }, { tabletMg: 10, displayLabel: "10mg tablet -- note: this is 4x the usual pediatric per-dose amounts above; adolescent/adult-strength only" }] },
+      { name: "Lecope", manufacturer: "Mankind", strengths: [{ mgPer5ml: 2.5, displayLabel: "NEW brand, web-verified: 2.5mg/5mL, same strength as Xyzal/Teczine" }] },
       { name: "Teczine", manufacturer: "Sun Pharma", strengths: [{ mgPer5ml: 2.5 }, { tabletMg: 5, displayLabel: "5mg tablet" }] },
     ],
     adminNote: "Once daily, EVENING preferred (mild sedation possible). With or without food.",
@@ -555,6 +691,10 @@ const DRUGS = [
   },
   {
     id: "fexofenadine",
+    medExplain: "This is fexofenadine, a non-drowsy allergy medicine.",
+    medWorking: "relief within 1–2 h.",
+    medEffects: "usually minimal; occasional headache.",
+    medStorage: "room temperature.",
     name: "Fexofenadine",
     category: "Antihistamines",
     minAgeMonths: 24,
@@ -573,6 +713,10 @@ const DRUGS = [
   },
   {
     id: "hydroxyzine",
+    medExplain: "This is hydroxyzine, for itch/hives or to help settle allergic symptoms (can cause drowsiness).",
+    medWorking: "itch eases within 1 h; sedating.",
+    medEffects: "drowsiness, dry mouth.",
+    medStorage: "room temperature.",
     name: "Hydroxyzine",
     category: "Antihistamines",
     minAgeMonths: 0,
@@ -589,6 +733,10 @@ const DRUGS = [
   },
   {
     id: "montelukast-combo",
+    medExplain: "This combines montelukast and levocetirizine for allergic rhinitis with troublesome nasal/allergy symptoms.",
+    medWorking: "daily control over days; not a rescue medicine.",
+    medEffects: "montelukast — report mood/behavior changes, sleep disturbance, nightmares (boxed neuropsychiatric warning); levocetirizine — mild drowsiness.",
+    medStorage: "room temperature.",
     name: "Montelukast (as Levocetirizine or Bilastine combination)",
     category: "Antihistamines",
     minAgeMonths: 24,
@@ -600,25 +748,37 @@ const DRUGS = [
     defaultDurationDays: 30,
     brands: [
       { name: "Montair-LC Kid (+Levocetirizine 2.5mg)", manufacturer: "Cipla", strengths: [{ mgPer5ml: 4 }, { tabletMg: 4, displayLabel: "4mg tablet + Levocetirizine 2.5mg" }] },
-      { name: "Montek-LC Kid (+Levocetirizine 2.5mg)", manufacturer: "Sun Pharma", strengths: [{ mgPer5ml: 4, displayLabel: "4mg/5mL syrup + Levocetirizine 2.5mg/5mL \u2014 verify exact concentration on the dispensed label" }, { tabletMg: 4, displayLabel: "4mg chewable tablet + Levocetirizine 2.5mg" }, { tabletMg: 5, displayLabel: "Montek-LC (adult/older-child strength): 5mg tablet + Levocetirizine 2.5mg \u2014 confirm this is the intended strength, not Montek-LC Kid" }] },
+      { name: "Montek-LC Kid (+Levocetirizine 2.5mg)", manufacturer: "Sun Pharma", strengths: [{ tabletMg: 4, displayLabel: "4mg chewable tablet + Levocetirizine 2.5mg" }, { mgPer5ml: 4, displayLabel: "4mg/5mL syrup + Levocetirizine 2.5mg/5mL" }] },
       { name: "Xyzal-M (+Levocetirizine 2.5mg)", manufacturer: "Dr Reddy's", strengths: [{ mgPer5ml: 4 }] },
     ],
     adminNote: "Once daily in the EVENING. Counsel the caregiver on montelukast's neuropsychiatric warning (mood/behavior/sleep changes) \u2014 this is a labeled warning, not a rare theoretical risk.",
     precaution: "Bilastine+Montelukast (Bilasure M Kid) uses a different antihistamine component not covered in this dosing reference \u2014 verify bilastine's pediatric dose separately before using that specific product; the montelukast figures above still apply to its montelukast component.",
-    notes: "Levocetirizine component dosing: see the standalone Levocetirizine entry for that half of the combination.",
+    notes: "Levocetirizine component dosing: see the standalone Levocetirizine entry for that half of the combination. Montek-LC Kid, like Montair-LC Kid and Xyzal-M, is 2.5mg levocetirizine per dose -- confirmed by Dr. Gowdar directly; a formulary row suggesting 5mg here was a probable data-entry error (inconsistent with the 'Kid' branding, since 5mg is the adult levocetirizine dose, and inconsistent with the other two Kid-branded combination products) that this app wrongly deferred to over converging evidence.",
   },
   {
     id: "olopatadine",
+    medExplain: "These are anti-allergy eye drops for itchy, watery eyes.",
+    medWorking: "itch eases within minutes to hours.",
+    medEffects: "transient stinging, blurring.",
+    medStorage: "room temperature; discard per label after opening.",
     name: "Olopatadine (eye drops)",
     category: "Antihistamines",
     minAgeMonths: 36,
     topicalOnly: true,
     sig: "1 drop BID to affected eye(s), \u22653 years",
-    brands: [{ name: "Olopat", manufacturer: "Ajanta", strengths: [{ displayLabel: "0.1% w/v eye drops" }] }],
+    brands: [
+      { name: "Olopat", manufacturer: "Ajanta", strengths: [{ displayLabel: "0.1% w/v eye drops" }] },
+      { name: "Winolap", manufacturer: "Sun Pharma", strengths: [{ displayLabel: "NEW brand, web-verified: 0.1% w/v eye drops" }] },
+      { name: "Winolap DS", manufacturer: "Sun Pharma", strengths: [{ displayLabel: "NEW: 0.2% w/v (double strength) eye drops -- confirm which concentration is intended before dispensing" }] },
+    ],
     adminNote: "Wash hands; pull down lower lid, instill 1 drop into the conjunctival sac without touching the tip to the eye/lashes.",
   },
   {
     id: "intranasal-steroid",
+    medExplain: "This is a steroid nasal spray for allergic rhinitis (blocked/runny itchy nose).",
+    medWorking: "best effect builds over days to 1–2 weeks of daily use; not immediate.",
+    medEffects: "nasal dryness, mild nosebleeds, sneezing.",
+    medStorage: "upright, room temperature; shake suspensions.",
     name: "Intranasal Corticosteroid (allergic rhinitis)",
     category: "Antihistamines",
     topicalOnly: true,
@@ -626,16 +786,41 @@ const DRUGS = [
     sig: "First-line for moderate/persistent allergic rhinitis. MOMETASONE (\u22652yr): 2-11yr 1 spray each nostril once daily; \u226512yr 2 sprays each nostril once daily. FLUTICASONE FUROATE (\u22652yr): 2-11yr 1 spray each nostril daily; \u226512yr 2 sprays each nostril daily. BUDESONIDE (\u22656yr): 6-11yr 1-2 sprays each nostril daily; \u226512yr 2 sprays each nostril daily. Each metered spray \u2248 50mcg.",
     brands: [
       { name: "Metaspray / Nasonex (Mometasone)", manufacturer: "Cipla / Organon", strengths: [{ displayLabel: "50mcg/actuation nasal spray \u2014 labeled \u22652 years" }] },
-      { name: "Flomist / Sensimist (Fluticasone)", manufacturer: "Cipla / GSK", strengths: [{ displayLabel: "Fluticasone furoate 27.5mcg or propionate 50mcg/actuation \u2014 confirm which is stocked" }] },
+      { name: "Flomist-F (Fluticasone furoate)", manufacturer: "Cipla", strengths: [{ displayLabel: "CONFIRMED from the pharmacy formulary: Fluticasone FUROATE (not propionate), 120-actuation spray; standard furoate strength is 27.5mcg/actuation" }] },
       { name: "Rhinocort (Budesonide)", manufacturer: "AstraZeneca", strengths: [{ displayLabel: "Budesonide 64mcg/actuation \u2014 labeled \u22656 years" }] },
     ],
     adminNote: "Prime a new/unused bottle before first use. Tilt head slightly forward, aim the nozzle AWAY from the nasal septum (toward the outer wall) to reduce epistaxis and rare septal perforation; breathe in gently, do not sniff hard. Full benefit builds over several days to ~2 weeks \u2014 counsel regular daily use, not PRN. Wipe and recap the nozzle after use.",
     precaution: "Monitor growth velocity with prolonged continuous use; epistaxis and nasal dryness are the common local effects. Note: placed in the Antihistamines block because that is where this app groups allergic-rhinitis therapy; its route is Nasal (see ROUTE_OVERRIDES).",
     notes: "More effective than oral antihistamines or montelukast for nasal congestion in moderate/persistent allergic rhinitis.",
   },
+  {
+    id: "cyproheptadine",
+    name: "Cyproheptadine (antihistamine / appetite stimulant)",
+    category: "Antihistamines",
+    minAgeMonths: 24,
+    medExplain: "This is cyproheptadine, an antihistamine sometimes used to help stimulate appetite in children with poor growth.",
+    medWorking: "allergy symptoms ease within 1-2h; appetite effects, if used for that purpose, typically take 1-2 weeks to assess.",
+    medEffects: "drowsiness, increased appetite (often the reason it's used), dry mouth.",
+    medStorage: "room temperature; shake syrup well.",
+    doseOptions: [
+      { id: "standard", label: "Allergy/appetite stimulation, \u00f7BID-TID", low: 0.25, high: 0.5, freq: 3, maxDay: 12 },
+    ],
+    sourceNote: "ADDED AGENT from the master formulary review \u2014 found as Practin Syrup (Dr Reddy's). 0.25-0.5mg/kg/day divided BID-TID (max ~12mg/day) is the general pediatric convention for both allergy and off-label appetite-stimulation use; the appetite-stimulation indication is widely practiced in India but is off-label and has a thin formal evidence base \u2014 counsel accordingly rather than presenting it as first-line growth therapy.",
+    defaultDurationDays: 14,
+    brands: [
+      { name: "Practin", manufacturer: "Dr Reddy's", strengths: [{ mgPer5ml: 2 }] },
+    ],
+    adminNote: "With or without food; often given with the largest meal if used for appetite stimulation.",
+    precaution: "Sedating \u2014 caution with other CNS depressants. Off-label for appetite stimulation; address underlying causes of poor growth rather than relying on this alone.",
+    notes: "",
+  },
   // ================= ANALGESICS / ANTIPYRETICS / STEROIDS =================
   {
     id: "paracetamol",
+    medExplain: "This is paracetamol, for fever and pain.",
+    medWorking: "fever/pain ease within 30–60 min.",
+    medEffects: "very safe at correct doses; overdose causes liver damage — stress never doubling up or combining with other paracetamol-containing products [1][39].",
+    medStorage: "room temperature; shake suspension.",
     name: "Paracetamol (Acetaminophen)",
     category: "Analgesics / Antipyretics / Steroids",
     minAgeMonths: 2,
@@ -658,6 +843,10 @@ const DRUGS = [
   },
   {
     id: "ibuprofen",
+    medExplain: "This is ibuprofen, for fever and pain (also reduces inflammation).",
+    medWorking: "fever/pain ease within ~60 min; longer-acting than paracetamol [4].",
+    medEffects: "stomach upset; caution with dehydration/vomiting/poor intake (kidney risk) and in varicella/possible soft-tissue infection [13].",
+    medStorage: "room temperature; shake well.",
     name: "Ibuprofen",
     category: "Analgesics / Antipyretics / Steroids",
     minAgeMonths: 6,
@@ -675,6 +864,10 @@ const DRUGS = [
   },
   {
     id: "ibuprofen-paracetamol",
+    medExplain: "This combines ibuprofen and paracetamol for fever/pain.",
+    medWorking: "within ~60 min.",
+    medEffects: "as for the two components; watch for double-dosing errors.",
+    medStorage: "room temperature; shake well.",
     name: "Ibuprofen + Paracetamol (combination)",
     category: "Analgesics / Antipyretics / Steroids",
     minAgeMonths: 3,
@@ -690,6 +883,10 @@ const DRUGS = [
   },
   {
     id: "mefenamic",
+    medExplain: "This is mefenamic acid, an anti-inflammatory for pain/fever.",
+    medWorking: "within ~60 min.",
+    medEffects: "stomach upset, diarrhoea; same NSAID cautions (hydration, kidney).",
+    medStorage: "room temperature; shake well.",
     name: "Mefenamic Acid",
     category: "Analgesics / Antipyretics / Steroids",
     minAgeMonths: 6,
@@ -701,12 +898,17 @@ const DRUGS = [
     defaultDurationDays: 3,
     brands: [
       { name: "Meftal P", manufacturer: "Blue Cross", strengths: [{ mgPer5ml: 100 }] },
+      { name: "Mefkind-P", manufacturer: "Mankind", strengths: [{ mgPer5ml: 100, displayLabel: "NEW brand, web-verified: same 100mg/5mL strength as Meftal P" }] },
     ],
     adminNote: "Short course only \u2014 GI and renal risk with prolonged NSAID use in children.",
     notes: "This is mefenamic acid ALONE, not a paracetamol combination despite the 'P' in the brand name \u2014 confirmed from the exact composition in the pharmacy formulary.",
   },
   {
     id: "prednisolone",
+    medExplain: "This is prednisolone, a steroid to reduce inflammation (e.g., wheeze/asthma flare, croup, allergic conditions).",
+    medWorking: "wheeze/inflammation improves over hours to a day.",
+    medEffects: "increased appetite, mood/sleep change, stomach upset, transient high sugar; brief courses are generally well tolerated.",
+    medStorage: "room temperature; shake suspension.",
     name: "Prednisolone Sodium Phosphate",
     category: "Analgesics / Antipyretics / Steroids",
     minAgeMonths: 0,
@@ -723,6 +925,10 @@ const DRUGS = [
   },
   {
     id: "dexamethasone",
+    medExplain: "This is dexamethasone, a steroid — often a single or short course for croup or inflammation.",
+    medWorking: "croup stridor improves within hours.",
+    medEffects: "short course well tolerated; appetite/mood changes.",
+    medStorage: "room temperature; shake suspension.",
     name: "Dexamethasone (oral)",
     category: "Analgesics / Antipyretics / Steroids",
     minAgeMonths: 0,
@@ -742,6 +948,10 @@ const DRUGS = [
   },
   {
     id: "methylprednisolone",
+    medExplain: "This is methylprednisolone, a steroid for inflammatory conditions.",
+    medWorking: "over hours to a day.",
+    medEffects: "appetite/mood/sleep changes, GI upset.",
+    medStorage: "room temperature.",
     name: "Methylprednisolone (oral)",
     category: "Analgesics / Antipyretics / Steroids",
     minAgeMonths: 0,
@@ -759,6 +969,10 @@ const DRUGS = [
   // ================= RESPIRATORY =================
   {
     id: "levosalbutamol",
+    medExplain: "This is an oral reliever for wheeze/cough — note inhaled routes are generally preferred.",
+    medWorking: "eases wheeze over ~30 min; slower and more side effects than inhaled.",
+    medEffects: "tremor, fast heartbeat, jitteriness.",
+    medStorage: "room temperature; shake well.",
     name: "Levosalbutamol / Salbutamol (single agent, oral)",
     category: "Respiratory",
     minAgeMonths: 0,
@@ -776,6 +990,10 @@ const DRUGS = [
   },
   {
     id: "salbutamol-neb",
+    medExplain: "This is the quick-relief (reliever) inhaler/nebule that opens the airways in wheeze/asthma.",
+    medWorking: "wheeze eases within minutes.",
+    medEffects: "tremor, fast heartbeat — expected and brief.",
+    medStorage: "MDI at room temperature; wash spacer in detergent and air-dry (do not rinse) to reduce static; clean mask-contact skin after use [3].",
     name: "Salbutamol / Albuterol (inhaled \u2014 nebulized or MDI)",
     category: "Respiratory",
     topicalOnly: true,
@@ -792,6 +1010,10 @@ const DRUGS = [
   },
   {
     id: "budesonide-neb",
+    medExplain: "This is an inhaled steroid (preventer) to reduce airway inflammation — it controls, it does not give instant relief.",
+    medWorking: "control builds over days to weeks with regular use.",
+    medEffects: "oral thrush and hoarseness (reduced by rinsing/face cleaning).",
+    medStorage: "room temperature; protect from light; use opened respule promptly.",
     name: "Budesonide (nebulized inhalation suspension)",
     category: "Respiratory",
     topicalOnly: true,
@@ -807,22 +1029,90 @@ const DRUGS = [
   },
   {
     id: "ipratropium-neb",
+    medExplain: "This opens the airways and is usually added to salbutamol in a moderate–severe wheeze attack.",
+    medWorking: "adds to salbutamol's effect over minutes.",
+    medEffects: "dry mouth, bitter taste; eye irritation if it reaches the eyes.",
+    medStorage: "room temperature; protect from light.",
     name: "Ipratropium Bromide (nebulized \u2014 adjunct to salbutamol)",
     category: "Respiratory",
     topicalOnly: true,
     minAgeMonths: 0,
     sig: "ADJUNCT TO SALBUTAMOL for MODERATE-SEVERE acute asthma exacerbation (add-on, NOT monotherapy). MULTIPLE-DOSE protocol (preferred): 0.25-0.5mg (250-500mcg) nebulized WITH each of the first 3 salbutamol doses, every 20 min over the first hour, then STOP once improving. Weight-based single dose alternative: <30kg = 0.5mg nebulized once; \u226530kg = 1mg nebulized once. pMDI ALTERNATIVE: 4 puffs of 20mcg by spacer with SABA, up to 3 times. Use only in the first 1-2 hours of a moderate/severe exacerbation \u2014 no proven benefit in mild exacerbations or as ongoing therapy.",
     brands: [
-      { name: "Ipravent Respules", manufacturer: "Cipla", strengths: [{ displayLabel: "250mcg/mL nebulizer respule (0.25mg/mL)" }, { displayLabel: "500mcg/2mL nebulizer respule \u2014 confirm which strength is stocked" }] },
+      { name: "Ipravent Respules", manufacturer: "Cipla", strengths: [{ displayLabel: "CONFIRMED from the pharmacy formulary: 500mcg/2mL respule is the stocked strength (the 250mcg/mL alternative previously listed is not confirmed as separately stocked)" }] },
       { name: "Ipravent (MDI)", manufacturer: "Cipla", strengths: [{ displayLabel: "20mcg/actuation metered-dose inhaler \u2014 use WITH a spacer (\u00b1 face-mask for young children)" }] },
-      { name: "Duolin Respules (+Levosalbutamol)", manufacturer: "Cipla", strengths: [{ displayLabel: "Ipratropium 500mcg + Levosalbutamol 1.25mg per 2.5mL respule \u2014 FIXED COMBINATION; if used, do NOT also give a separate salbutamol/levosalbutamol nebulization (double-dosing the beta-agonist). Confirm the exact stocked strength." }] },
+      { name: "Duolin Respules (+Levosalbutamol 1.25mg)", manufacturer: "Cipla", strengths: [{ displayLabel: "CONFIRMED: Ipratropium 500mcg + Levosalbutamol 1.25mg per 2.5mL \u2014 FIXED COMBINATION; if used, do NOT also give a separate salbutamol/levosalbutamol nebulization (double-dosing the beta-agonist)" }] },
+      { name: "Duolin-LD Respules (+Levosalbutamol 0.63mg)", manufacturer: "Cipla", strengths: [{ displayLabel: "NEW, confirmed from the formulary: Ipratropium 500mcg + Levosalbutamol 0.63mg per 2.5mL \u2014 lower-dose combination, likely intended for younger/smaller children; same double-dosing caution as above" }] },
+      { name: "Duolin (MDI combination)", manufacturer: "Cipla", strengths: [{ displayLabel: "NEW, confirmed from the formulary: Ipratropium 20mcg + Levosalbutamol 30mcg per actuation, 200-dose inhaler \u2014 same double-dosing caution with separate SABA use" }] },
     ],
     adminNote: "Deliver via a JET nebulizer connected to an air compressor, over 5-15 min; may be mixed in the same nebulizer cup with salbutamol if given within 1 hour. Use a MOUTHPIECE where possible, or a WELL-FITTING mask \u2014 keep the nebulized mist OUT of the eyes (aerosol contact can cause transient pupil dilation, blurred vision, and precipitate/worsen acute angle-closure glaucoma). This is an ADD-ON to salbutamol and systemic corticosteroid, given in the acute setting only; discontinue once the child improves \u2014 it has no role in maintenance or home asthma control. Reassess after each set of doses.",
     precaution: "Adjunct ONLY \u2014 not a substitute for salbutamol or systemic steroid, and not a reliever the family should continue at home. Evidence of benefit (reduced hospitalization) is concentrated in MODERATE-SEVERE exacerbations; mild exacerbations do not benefit. FDA safety/effectiveness for nebulized ipratropium is formally established only for maintenance COPD bronchodilation in patients \u226512 years \u2014 pediatric acute-asthma use is guideline-supported but off-label. Common effects: dry mouth, throat irritation; keep out of eyes as above. Caution (relative) with bladder-neck obstruction and, historically, soy/peanut allergy for older MDI formulations \u2014 verify the specific product.",
     notes: "Typical total exposure across an ED visit is 3 doses of 250-500mcg over the first hour added to salbutamol; benefit is greatest when started within the first 2 hours. GINA 2026 gives 0.25mg nebulized (or 4 puffs of 20mcg by spacer) with SABA up to 3 times for moderately-severe/severe exacerbations in children \u22645 years. Pediatrics in Review gives 0.25-0.5mg every 20 min for 3 doses, or a single weight-based dose (<30kg 0.5mg; \u226530kg 1mg).",
   },
   {
+    id: "budesonide-levosalbutamol-neb",
+    name: "Budesonide + Levosalbutamol (nebulized, fixed combination)",
+    category: "Respiratory",
+    topicalOnly: true,
+    minAgeMonths: 0,
+    medExplain: "This combines a steroid (budesonide) and a bronchodilator (levosalbutamol) in one nebulized solution.",
+    medWorking: "bronchodilator effect within minutes; steroid benefit builds over days with regular use.",
+    medEffects: "tremor, fast heartbeat (from the bronchodilator component); oral thrush risk with the steroid component \u2014 rinse mouth after use.",
+    medStorage: "room temperature; protect from light.",
+    sig: "Nebulize the whole respule contents via a JET nebulizer. Dose by respule strength, NOT by a weight formula \u2014 select the strength matching the child's usual budesonide and levosalbutamol needs; do NOT also give separate budesonide or separate levosalbutamol nebulization at the same time (double-dosing).",
+    brands: [
+      { name: "Budesal-0.5mg Respules", manufacturer: "Cipla", strengths: [{ displayLabel: "NEW, web-verified: Budesonide 0.5mg + Levosalbutamol 1.25mg, fixed combination respule" }] },
+      { name: "Budesal-1mg Respules", manufacturer: "Cipla", strengths: [{ displayLabel: "NEW, web-verified: Budesonide 1mg + Levosalbutamol 1.25mg, fixed combination respule" }] },
+    ],
+    adminNote: "Deliver via a JET nebulizer; rinse the mouth (and wash the face if a mask is used) after each dose to reduce oral thrush risk.",
+    precaution: "A fixed-ratio combination \u2014 cannot titrate the steroid and bronchodilator doses independently. If the child needs a different bronchodilator dose than the steroid dose calls for, use separate Budecort and Levolin/Duolin products instead of this fixed combination.",
+    notes: "",
+  },
+  {
+    id: "laba-ics-combo",
+    name: "LABA + ICS Combination Inhalers (step-up asthma therapy)",
+    category: "Respiratory",
+    topicalOnly: true,
+    minAgeMonths: 48,
+    medExplain: "This combines a steroid with a long-acting bronchodilator for ongoing asthma control, used when an inhaled steroid alone isn't enough.",
+    medWorking: "control improves over 1-2 weeks of regular use; this is NOT a reliever for sudden symptoms.",
+    medEffects: "oral thrush (rinse mouth after use), tremor, fast heartbeat.",
+    medStorage: "room temperature; do not puncture or burn the canister.",
+    sig: "MAINTENANCE / STEP-UP THERAPY ONLY \u2014 NOT a reliever. Use only when ICS alone has not controlled symptoms, per GINA step-up guidance. Dose per specific product strength and child's age/control level \u2014 individualize, not a simple weight-based calculation.",
+    brands: [
+      { name: "Foracort (Budesonide+Formoterol) Inhaler", manufacturer: "Cipla", strengths: [{ displayLabel: "NEW, web-verified: Budesonide 200mcg + Formoterol 6mcg/actuation" }] },
+      { name: "Foracort 1 Respules (Budesonide+Formoterol)", manufacturer: "Cipla", strengths: [{ displayLabel: "NEW, web-verified: Budesonide 1mg + Formoterol 20mcg nebulized respule" }] },
+      { name: "Seroflo (Fluticasone+Salmeterol) Inhaler", manufacturer: "Cipla", strengths: [{ displayLabel: "NEW, web-verified: available as 50/25mcg, 125/25mcg, and 250/25mcg (Fluticasone/Salmeterol) strengths" }] },
+      { name: "Flohale Respules (Fluticasone alone)", manufacturer: "Cipla", strengths: [{ displayLabel: "NEW: Fluticasone Propionate 0.5mg nebulized respule -- ICS alone, not a LABA combination" }] },
+    ],
+    adminNote: "Use WITH A SPACER for any MDI form. Rinse the mouth after each dose. This is a controller medication taken regularly, not PRN for acute symptoms \u2014 keep a separate reliever (salbutamol) available for acute symptoms.",
+    precaution: "LABA (long-acting beta-agonist) components carry a boxed-warning-level caution around LABA use without a concurrent ICS in asthma, and are generally reserved for step-up therapy in children with asthma not controlled on ICS alone -- not first-line or for young children without specialist input. The 4-year floor here is a general caution, not a hard labeled cutoff for every product; verify the specific product's labeled age.",
+    notes: "",
+  },
+  {
+    id: "hypertonic-saline-neb",
+    name: "Hypertonic Saline (nebulized, 3%)",
+    category: "Respiratory",
+    topicalOnly: true,
+    minAgeMonths: 0,
+    medExplain: "This is a stronger saline solution given by nebulizer to help loosen and clear mucus.",
+    medWorking: "effect is on mucus clearance/cough, assessed over the treatment course rather than a single dramatic sign.",
+    medEffects: "cough or mild throat irritation during/after nebulization; occasional bronchospasm \u2014 a bronchodilator is sometimes given first.",
+    medStorage: "room temperature.",
+    sig: "4mL nebulized, typically BID-TID, used for conditions such as bronchiolitis or chronic mucus clearance (e.g., cystic fibrosis) per specialist/clinical protocol \u2014 not a routine first-line cough treatment.",
+    brands: [
+      { name: "Hyperneb-3% Respules", manufacturer: "Cipla", strengths: [{ displayLabel: "NEW, web-verified: Sodium Chloride 3% w/v, 4mL respule" }] },
+    ],
+    adminNote: "Deliver via a JET nebulizer. A bronchodilator (salbutamol) is sometimes given first in patients prone to bronchospasm.",
+    precaution: "Evidence base is strongest for bronchiolitis (modest benefit, mixed trial results) and cystic fibrosis mucus clearance -- not a routine treatment for ordinary upper respiratory infections.",
+    notes: "",
+  },
+  {
     id: "ambroxol",
+    medExplain: "This is ambroxol, a mucus-thinner to loosen phlegm.",
+    medWorking: "cough becomes more productive/looser over days.",
+    medEffects: "mild GI upset.",
+    medStorage: "room temperature; shake well.",
     name: "Ambroxol (single agent)",
     category: "Respiratory",
     minAgeMonths: 24,
@@ -845,6 +1135,10 @@ const DRUGS = [
   },
   {
     id: "montelukast",
+    medExplain: "This is montelukast, a daily preventer for asthma and/or allergic rhinitis.",
+    medWorking: "control over days; not a reliever.",
+    medEffects: "counsel on neuropsychiatric effects — mood/behavior changes, sleep disturbance, nightmares (boxed warning); report these.",
+    medStorage: "room temperature; protect from moisture.",
     name: "Montelukast (single agent)",
     category: "Respiratory",
     minAgeMonths: 24,
@@ -867,6 +1161,7 @@ const DRUGS = [
   },
   {
     id: "cough-cold-fdc",
+    medExplain: "These multi-ingredient bronchodilator/mucolytic/antitussive/antihistamine/decongestant syrups are not recommended in young children: limited efficacy and risk of harm, and they conflict with the AAP principle of avoiding unnecessary multi-ingredient products [24]. Counsel families against routine use, especially under age 4–6, and favour single agents, fluids, and symptomatic care.",
     name: "Cough-Cold Fixed-Dose Combinations (multiple brands)",
     category: "Respiratory",
     topicalOnly: true,
@@ -888,6 +1183,10 @@ const DRUGS = [
   // ================= GASTROINTESTINAL =================
   {
     id: "esomeprazole",
+    medExplain: "This is esomeprazole, to reduce stomach acid (reflux/GERD, ulcers).",
+    medWorking: "symptoms improve over days.",
+    medEffects: "headache, GI upset; usually well tolerated.",
+    medStorage: "room temperature.",
     name: "Esomeprazole",
     category: "Gastrointestinal",
     minAgeMonths: 1,
@@ -911,6 +1210,10 @@ const DRUGS = [
   },
   {
     id: "domperidone",
+    medExplain: "This is domperidone, for nausea/vomiting and to help stomach emptying.",
+    medWorking: "nausea eases within ~30–60 min.",
+    medEffects: "caution — rare heart-rhythm (QT) effects; avoid in cardiac conditions and certain drug interactions.",
+    medStorage: "room temperature; shake syrup.",
     name: "Domperidone",
     category: "Gastrointestinal",
     minAgeMonths: 0,
@@ -930,6 +1233,10 @@ const DRUGS = [
   },
   {
     id: "ondansetron",
+    medExplain: "This is ondansetron, a strong anti-vomiting medicine (e.g., for gastroenteritis with vomiting).",
+    medWorking: "vomiting usually settles within ~30 min, allowing oral rehydration.",
+    medEffects: "headache, constipation; rare QT prolongation.",
+    medStorage: "room temperature; keep MD tablets in the blister until use.",
     name: "Ondansetron",
     category: "Gastrointestinal",
     minAgeMonths: 6,
@@ -948,13 +1255,18 @@ const DRUGS = [
     defaultDurationDays: 1,
     brands: [
       { name: "Syrp Emeset", manufacturer: "Cipla", strengths: [{ mgPer5ml: 2 }, { tabletMg: 4, displayLabel: "4mg tablet" }, { tabletMg: 8, displayLabel: "8mg tablet" }] },
-      { name: "Vomikind-MD", manufacturer: "Mankind", strengths: [{ tabletMg: 4, displayLabel: "4mg orally-disintegrating tablet -- from general market knowledge, NOT independently verified against this pharmacy's stock or a label photo; add only if actually confirmed on the shelf" }, { tabletMg: 8, displayLabel: "8mg orally-disintegrating tablet -- same caveat" }] },
+      { name: "Vomikind Fast (oral strip)", manufacturer: "Mankind", strengths: [{ tabletMg: 4, displayLabel: "CORRECTION: the pharmacy formulary does NOT show a 'Vomikind-MD' orally-disintegrating tablet (previously listed from general market knowledge) at any strength -- it does NOT exist in this formulary. What IS confirmed is 'Vomikind Fast', a 4mg ORAL STRIP (a different dissolving format), plus a Vomikind syrup and injection. Use this oral strip as the confirmed non-tablet alternative instead." }] },
+      { name: "Syrp Vomikind", manufacturer: "Mankind", strengths: [{ mgPer5ml: 2, displayLabel: "RESOLVED: the master formulary audit lists this cleanly as 'Ondansetron (2mg)' with status VERIFIED, supporting the 2mg/5mL reading (matching Emeset) over the alarming 2mg/mL alternative this app previously flagged as unresolved" }] },
     ],
     adminNote: "Single dose for vomiting limiting oral rehydration in acute gastroenteritis \u2014 not routine repeated dosing. Ready-made solution, room temperature, protect from light, store upright.",
     notes: "Best evidence base for the AGE indication is \u22654 years.",
   },
   {
     id: "racecadotril",
+    medExplain: "This is racecadotril, to reduce watery stool output in acute diarrhoea — used with ORS and zinc, not instead of them.",
+    medWorking: "reduces stool volume over the illness; ORS remains the mainstay [2][11].",
+    medEffects: "generally well tolerated.",
+    medStorage: "room temperature.",
     name: "Racecadotril",
     category: "Gastrointestinal",
     minAgeMonths: 3,
@@ -978,6 +1290,10 @@ const DRUGS = [
   },
   {
     id: "simethicone",
+    medExplain: "This is simethicone, for trapped wind/colic.",
+    medWorking: "eases gassiness; effect is symptomatic.",
+    medEffects: "minimal.",
+    medStorage: "room temperature; shake well.",
     name: "Simethicone (\u00b1 carminative combination)",
     category: "Gastrointestinal",
     minAgeMonths: 0,
@@ -996,6 +1312,10 @@ const DRUGS = [
   },
   {
     id: "dicyclomine-simethicone",
+    medExplain: "This combines an antispasmodic with simethicone for cramping abdominal pain/colic.",
+    medWorking: "cramps ease within ~30–60 min.",
+    medEffects: "dry mouth, drowsiness; not for young infants.",
+    medStorage: "room temperature; shake well.",
     name: "Dicyclomine + Simethicone",
     category: "Gastrointestinal",
     minAgeMonths: 6,
@@ -1012,6 +1332,10 @@ const DRUGS = [
   },
   {
     id: "drotaverine",
+    medExplain: "This is drotaverine, an antispasmodic for cramping abdominal pain.",
+    medWorking: "cramps ease within ~30–60 min.",
+    medEffects: "dizziness, nausea.",
+    medStorage: "room temperature; shake well.",
     name: "Drotaverine",
     category: "Gastrointestinal",
     minAgeMonths: 12,
@@ -1030,6 +1354,10 @@ const DRUGS = [
   },
   {
     id: "lactulose",
+    medExplain: "This is lactulose, a gentle laxative for constipation.",
+    medWorking: "soft stool over 1–2 days (not immediate).",
+    medEffects: "bloating, wind, cramps initially.",
+    medStorage: "room temperature.",
     name: "Lactulose",
     category: "Gastrointestinal",
     minAgeMonths: 0,
@@ -1046,6 +1374,10 @@ const DRUGS = [
   },
   {
     id: "peg3350",
+    medExplain: "This is PEG (macrogol), a laxative for constipation or bowel clean-out.",
+    medWorking: "maintenance softens stool over 1–2 days; clean-out works over hours.",
+    medEffects: "bloating, loose stools, cramps.",
+    medStorage: "room temperature; keep sachets sealed.",
     name: "Polyethylene Glycol 3350 (Macrogol)",
     category: "Gastrointestinal",
     minAgeMonths: 6,
@@ -1066,16 +1398,25 @@ const DRUGS = [
   },
   {
     id: "gaviscon",
+    medExplain: "This forms a protective raft on top of the stomach to reduce reflux/heartburn.",
+    medWorking: "reflux symptoms ease shortly after dosing.",
+    medEffects: "rarely constipation.",
+    medStorage: "room temperature; shake well; do not freeze.",
     name: "Sodium Alginate (\u00b1 bicarbonate/calcium carbonate)",
     category: "Gastrointestinal",
     topicalOnly: true,
     sig: "Infant sachets given AFTER FEEDS, per label weight bands (verify the exact stocked formulation \u2014 sachet vs 150mL liquid may follow different weight cutoffs)",
-    brands: [{ name: "Gaviscon", manufacturer: "Reckitt", strengths: [{ displayLabel: "Sodium alginate + Sodium bicarbonate + Calcium carbonate, 150mL liquid" }] }],
+    brands: [
+      { name: "Gaviscon", manufacturer: "Reckitt", strengths: [{ displayLabel: "Sodium alginate + Sodium bicarbonate + Calcium carbonate, 150mL liquid -- NOT found in the pharmacy formulary; possibly not actually stocked" }] },
+      { name: "Digeraft", manufacturer: "Abbott", strengths: [{ mgPer5ml: 250, displayLabel: "NEW, web-verified: Sodium Alginate 250mg + Sodium Bicarbonate 133.5mg + Calcium Carbonate 80mg per 5mL" }] },
+      { name: "Eva Raft", manufacturer: "Alembic", strengths: [{ mgPer5ml: 250, displayLabel: "NEW, web-verified: Sodium Alginate 250mg + Sodium Bicarbonate 133.5mg + Calcium Carbonate 80mg per 5mL -- same composition as Digeraft" }] },
+    ],
     adminNote: "Give after feeds.",
-    notes: "The OPD stock item is the 150mL LIQUID, which may be formulated for older children/adults rather than the infant sachet powder -- confirm which exact product is on the shelf before dosing.",
+    notes: "Gaviscon itself was not found in the pharmacy formulary -- Digeraft and Eva Raft are confirmed stocked alternatives with the same alginate-raft mechanism and a web-verified composition, and may be what's actually on the shelf rather than Gaviscon specifically.",
   },
   {
     id: "ranitidine",
+    medExplain: "Listed for recognition; counsel against use given withdrawal/NDMA concerns — prefer a PPI (e.g., esomeprazole) for acid suppression. Do not dispense without a specific reason.",
     name: "Ranitidine",
     category: "Gastrointestinal",
     topicalOnly: true,
@@ -1087,6 +1428,10 @@ const DRUGS = [
   },
   {
     id: "citrate-alkalinizer",
+    medExplain: "This makes the urine less acidic — used for burning urine or certain stones/metabolic conditions.",
+    medWorking: "urinary symptoms ease over days.",
+    medEffects: "mild GI upset; caution with kidney impairment (potassium).",
+    medStorage: "room temperature.",
     name: "Potassium Citrate / Disodium Hydrogen Citrate",
     category: "Gastrointestinal",
     topicalOnly: true,
@@ -1099,6 +1444,10 @@ const DRUGS = [
   },
   {
     id: "zinc",
+    medExplain: "This is zinc, given with ORS to shorten and reduce the severity of diarrhoea.",
+    medWorking: "shortens the diarrhoeal episode and reduces recurrence over the following 2–3 months [2][29].",
+    medEffects: "may cause vomiting from its metallic taste; occasional constipation [29].",
+    medStorage: "room temperature; shake well.",
     name: "Zinc (elemental)",
     category: "Gastrointestinal",
     minAgeMonths: 0,
@@ -1110,7 +1459,7 @@ const DRUGS = [
     defaultDurationDays: 14,
     brands: [
       { name: "Nuzinco", manufacturer: "Azveston", strengths: [{ mgPer5ml: 20 }] },
-      { name: "Zinconia", manufacturer: "Zuventus", strengths: [{ mgPer5ml: 20 }, { tabletMg: 50, displayLabel: "50mg tablet (zinc acetate -- confirm elemental zinc equivalence with the pharmacy before substituting for the sulfate-based liquid dose)" }] },
+      { name: "Zinconia", manufacturer: "Zuventus", strengths: [{ mgPer5ml: 20, displayLabel: "CONFIRMED: Zinc Acetate equivalent to Elemental Zinc 20mg per 5mL -- the master formulary audit verifies this is already expressed as elemental zinc, not salt weight" }, { tabletMg: 50, displayLabel: "50mg tablet -- same salt (zinc acetate) as the syrup; elemental-equivalence of this specific tablet not independently re-confirmed, but the syrup's elemental labeling convention makes it likely" }] },
       { name: "Z&D (drops)", manufacturer: "Dr Reddy's", strengths: [{ mgPerMl: 20 }] },
       { name: "Zincogut (drops)", manufacturer: "Centaur", strengths: [{ mgPerMl: 20 }] },
     ],
@@ -1119,6 +1468,10 @@ const DRUGS = [
   },
   {
     id: "ors",
+    medExplain: "This is ORS — the single most important treatment for diarrhoea, to prevent and treat dehydration.",
+    medWorking: "rehydrates and maintains hydration; does not stop the diarrhoea but prevents its main danger.",
+    medEffects: "safe; seek care for persistent vomiting, lethargy, sunken eyes, or no urine.",
+    medStorage: "keep sachets sealed; discard prepared solution after 24 h.",
     name: "Oral Rehydration Salts (WHO low-osmolarity)",
     category: "Gastrointestinal",
     topicalOnly: true,
@@ -1127,7 +1480,29 @@ const DRUGS = [
     adminNote: "Offer small, frequent sips/spoonfuls (5mL every 1-2 min); continue breastfeeding/feeding throughout. Reconstitute one sachet in the stated volume of clean water; DISCARD AFTER 24H. Do not add sugar or boil the solution after mixing.",
   },
   {
+    id: "lactase-enzyme",
+    name: "Lactase Enzyme (lactose intolerance)",
+    category: "Gastrointestinal",
+    topicalOnly: true,
+    minAgeMonths: 0,
+    medExplain: "This is a lactase enzyme supplement, given with milk/dairy to help digest lactose in children with lactose intolerance.",
+    medWorking: "reduces bloating, gas, and loose stools from dairy when given correctly with the feed.",
+    medEffects: "well tolerated; not effective if given separately from the dairy-containing feed.",
+    medStorage: "per label; some formulations need refrigeration -- check the specific product.",
+    sig: "A few drops added directly to milk/formula/feed immediately before giving, per label instructions -- must be given WITH the lactose-containing feed to work, not as a standalone dose.",
+    brands: [
+      { name: "Mactase Drop", manufacturer: "Macleods", strengths: [{ displayLabel: "NEW, web-verified: Lactase Enzyme 600 FCC Units" }] },
+    ],
+    adminNote: "Add directly to the milk/formula just before feeding; does not work if given separately from the feed. Does not treat a milk PROTEIN allergy -- this is for lactose (sugar) intolerance only.",
+    precaution: "Confirm the diagnosis is lactose intolerance, not cow's milk protein allergy -- the two are frequently confused by families and this product does not help with the latter.",
+    notes: "",
+  },
+  {
     id: "probiotic-sboulardii",
+    medExplain: "This is a probiotic, an adjunct that may modestly shorten acute diarrhoea or help with antibiotic-associated loose stools.",
+    medWorking: "adjunct to ORS and zinc — never a substitute.",
+    medEffects: "well tolerated; caution in immunocompromised/central lines.",
+    medStorage: "per label (some refrigerated); keep sealed.",
     name: "Probiotic \u2014 Saccharomyces boulardii",
     category: "Gastrointestinal",
     topicalOnly: true,
@@ -1140,6 +1515,10 @@ const DRUGS = [
   },
   {
     id: "probiotic-lgg",
+    medExplain: "This is a probiotic, an adjunct that may modestly shorten acute diarrhoea or help with antibiotic-associated loose stools.",
+    medWorking: "adjunct to ORS and zinc — never a substitute.",
+    medEffects: "well tolerated; caution in immunocompromised/central lines.",
+    medStorage: "per label (some refrigerated); keep sealed.",
     name: "Probiotic \u2014 Lactobacillus rhamnosus GG",
     category: "Gastrointestinal",
     topicalOnly: true,
@@ -1153,6 +1532,10 @@ const DRUGS = [
   },
   {
     id: "probiotic-lreuteri",
+    medExplain: "This is a probiotic, an adjunct that may modestly shorten acute diarrhoea or help with antibiotic-associated loose stools.",
+    medWorking: "adjunct to ORS and zinc — never a substitute.",
+    medEffects: "well tolerated; caution in immunocompromised/central lines.",
+    medStorage: "per label (some refrigerated); keep sealed.",
     name: "Probiotic \u2014 Lactobacillus reuteri DSM 17938",
     category: "Gastrointestinal",
     topicalOnly: true,
@@ -1166,6 +1549,10 @@ const DRUGS = [
   },
   {
     id: "probiotic-bclausii",
+    medExplain: "This is a probiotic, an adjunct that may modestly shorten acute diarrhoea or help with antibiotic-associated loose stools.",
+    medWorking: "adjunct to ORS and zinc — never a substitute.",
+    medEffects: "well tolerated; caution in immunocompromised/central lines.",
+    medStorage: "per label (some refrigerated); keep sealed.",
     name: "Probiotic \u2014 Bacillus clausii / B. coagulans / Lactic acid Bacillus",
     category: "Gastrointestinal",
     topicalOnly: true,
@@ -1183,25 +1570,31 @@ const DRUGS = [
   // ================= IRON =================
   {
     id: "iron",
+    medExplain: "This is iron, to treat or prevent iron-deficiency anaemia.",
+    medWorking: "energy improves over weeks; haemoglobin rises over 4–8 weeks; continue 2–3 months after normalisation to refill stores.",
+    medEffects: "dark stools (harmless), constipation, nausea, temporary tooth staining; iron overdose is dangerous — store strictly out of reach.",
+    medStorage: "room temperature; tightly closed, away from children.",
     name: "Iron (elemental)",
     category: "Iron",
     minAgeMonths: 0,
     doseOptions: [
       { id: "conventional", label: "IDA treatment \u2014 conventional iron salts (all brands EXCEPT Tasiron), \u00f7 once daily-BID", low: 3, high: 6, freq: 2, maxDay: 200 },
-      { id: "liposomal", label: "IDA treatment \u2014 liposomal/micro-encapsulated iron (Tasiron ONLY), once daily", low: 1.5, high: 1.5, freq: 1, maxDay: 100 },
+      { id: "liposomal", label: "IDA treatment \u2014 liposomal/micro-encapsulated iron (Tasiron ONLY), once daily", low: 1.5, high: 3, freq: 1, maxDay: 100 },
       { id: "prophylaxis", label: "Prophylaxis (conventional iron salts), exclusively breastfed term infant from 4 months", low: 1, high: 2, freq: 1, maxDay: 30 },
     ],
-    sourceNote: "SIMPLIFIED per Dr. Gowdar's direct correction: exactly two treatment regimens now -- 3-6mg/kg/day for every conventional-salt brand here (Feronia-XT, Orofer-XT, Nuhemo, Trifer, Raricap), and a SEPARATE 1.5mg/kg/day once-daily regimen that applies ONLY to Tasiron's liposomal/micro-encapsulated products. Picking 'conventional' with a Tasiron brand, or 'liposomal' with a conventional-salt brand, is a mismatch -- match the regimen to the brand actually selected below. Prophylaxis (1-2mg/kg/day, breastfed term infants from 4 months) remains a separate indication, not a third treatment-dose variant.",
+    sourceNote: "SIMPLIFIED per Dr. Gowdar's direct correction: exactly two treatment regimens -- 3-6mg/kg/day for every conventional-salt brand here (Feronia-XT, Orofer-XT, Nuhemo, Trifer, Raricap), and a SEPARATE 1.5-3mg/kg/day once-daily range (widened from an earlier fixed 1.5mg/kg/day, per direct correction) that applies ONLY to Tasiron's liposomal/micro-encapsulated products. CORRECTION: selecting a Tasiron brand previously did NOT automatically switch the regimen dropdown to 'liposomal' -- it silently stayed on whichever regimen was last selected (usually 'conventional', 3-6mg/kg/day, since that's the default), producing a real wrong-dose risk that depended on the prescriber remembering to switch it manually. The brand dropdown now auto-selects the correct regimen for you; switching between a Tasiron and a non-Tasiron brand updates it automatically. Prophylaxis (1-2mg/kg/day, breastfed term infants from 4 months) remains a separate indication, not a third treatment-dose variant.",
     defaultDurationDays: 90,
     brands: [
       { name: "Syrp Feronia-XT", manufacturer: "Zuventus", strengths: [{ mgPer5ml: 30, displayLabel: "Ferrous ascorbate, 30mg elemental Fe/5mL" }] },
+      { name: "Ferium-XT", manufacturer: "Emcure", strengths: [{ mgPer5ml: 30, displayLabel: "NEW brand, web-verified: Ferrous Ascorbate eq. to Elemental Iron 30mg/5mL (matches Orofer-XT)" }, { mgPerMl: 10, displayLabel: "NEW: drops, Ferrous Ascorbate eq. to Elemental Iron 10mg/mL + Folic Acid 100mcg" }] },
+      { name: "Cpink Drop", manufacturer: "Cipla", strengths: [{ mgPerMl: 10, displayLabel: "NEW brand, web-verified: Ferrous Ascorbate eq. to Elemental Iron 10mg/mL + Folic Acid 100mcg -- same composition as Ferium-XT drops" }] },
       { name: "Orofer-XT (drops)", manufacturer: "Emcure", strengths: [{ mgPerMl: 10, displayLabel: "Ferrous ascorbate, 10mg elemental Fe/mL" }] },
       { name: "Nuhemo (drops)", manufacturer: "Azveston", strengths: [{ mgPerMl: 10, displayLabel: "Ferrous ascorbate, approx. 10mg elemental Fe/mL \u2014 verify exact label" }] },
       { name: "Drop Trifer", manufacturer: "Apex", strengths: [{ mgPerMl: 50, displayLabel: "Iron (III) hydroxide polymaltose, 50mg elemental Fe/mL" }] },
       { name: "Drop Raricap", manufacturer: "Strides", strengths: [{ mgPerMl: 10, displayLabel: "Ferrous calcium citrate, 10mg elemental Fe/mL" }] },
-      { name: "Tasiron (syrup)", manufacturer: "Inzpera", strengths: [{ mgPer5ml: 10, displayLabel: "Ferric di-phosphate (micronized micro-encapsulated), 10mg elemental Fe + 15mcg folic acid /5mL -- CONFIRMED FROM THE ACTUAL PRODUCT LABEL PHOTO" }] },
-      { name: "Tasiron Baby Drops", manufacturer: "Inzpera", strengths: [{ mgPerMl: 10, displayLabel: "10mg elemental Fe/mL -- CORRECTED per Dr. Gowdar's direct confirmation (previously listed as 5mg/mL)" }] },
-      { name: "Tasiron sachet (0.75g)", manufacturer: "Inzpera", strengths: [{ tabletMg: 8, displayLabel: "0.75g sachet: ferric di-phosphate, 8mg elemental Fe + 30mcg folic acid + 0.9mcg B12 -- CONFIRMED FROM THE ACTUAL PRODUCT LABEL PHOTO" }] },
+      { name: "Tasiron (syrup)", manufacturer: "Inzpera", doseOptionHint: "liposomal", strengths: [{ mgPer5ml: 10, displayLabel: "Ferric di-phosphate (micronized micro-encapsulated), 10mg elemental Fe + 15mcg folic acid /5mL -- CONFIRMED FROM THE ACTUAL PRODUCT LABEL PHOTO" }] },
+      { name: "Tasiron Baby Drops", manufacturer: "Inzpera", doseOptionHint: "liposomal", strengths: [{ mgPerMl: 10, displayLabel: "10mg elemental Fe/mL -- CORRECTED per Dr. Gowdar's direct confirmation (previously listed as 5mg/mL)" }] },
+      { name: "Tasiron sachet (0.75g)", manufacturer: "Inzpera", doseOptionHint: "liposomal", strengths: [{ tabletMg: 8, displayLabel: "0.75g sachet: ferric di-phosphate, 8mg elemental Fe + 30mcg folic acid + 0.9mcg B12 -- CONFIRMED FROM THE ACTUAL PRODUCT LABEL PHOTO" }] },
     ],
     adminNote: "IDEALLY ON AN EMPTY STOMACH, 1h before food, with vitamin C/citrus to enhance absorption. SEPARATE from milk, dairy, calcium, and antacids by \u22652h. If GI upset occurs, give with a small non-dairy snack instead. Use a syringe, place toward the back/side of the mouth; RINSE MOUTH/BRUSH TEETH after drops to limit staining. Alternate-day dosing may improve absorption/tolerance if daily dosing isn't tolerated. Tasiron syrup reconstitution specifically (from the pack): fill to the 150mL mark with boiled-and-cooled water, shake vigorously, REFRIGERATE after reconstitution, use within 30 days, shake before each dose, and use only the TruServ spoon provided. FOR TASIRON PRODUCTS SPECIFICALLY: select the 'Liposomal/micro-encapsulated iron' regimen above (1.5mg/kg/day), not the conventional-salt regimens, which are dosed differently and are for the other iron brands in this list.",
     notes: "MAJOR CORRECTION, confirmed directly from photographed product labels (not just formulary text): Tasiron syrup is 10mg elemental Fe/5mL, NOT 30mg/5mL as this app previously stated -- the old figure would have calculated a volume delivering roughly 3x less iron than intended, since the dose math divides the target mg by a concentration that was itself 3x too high. The syrup's iron salt is ferric di-phosphate, not ferrous ascorbate. The 0.75g sachet is confirmed at 8mg elemental Fe with 30mcg folic acid. Dr. Gowdar separately confirmed the drops at 10mg/mL (now reflected above). Two previously-listed sachet entries have since been REMOVED per Dr. Gowdar's direct correction -- a '1g sachet, 15mg' and a '3g sachet, 30mg' -- neither exists in the market; the 0.75g/8mg sachet (photo-confirmed) is now the only sachet size in this app. 'Liposomal' is pharmacy-marketing language; the actual pack says 'micronized micro-encapsulated iron technology.'",
@@ -1209,10 +1602,14 @@ const DRUGS = [
   // ================= VITAMIN D & CALCIUM =================
   {
     id: "vitamind3",
+    medExplain: "This is vitamin D, for prevention or treatment of deficiency/rickets.",
+    medWorking: "biochemical correction over weeks; deficiency symptoms improve over weeks–months.",
+    medEffects: "very safe at correct doses; excess (from stacking high-dose products) causes high calcium.",
+    medStorage: "room temperature; protect from light.",
     name: "Vitamin D3 (Cholecalciferol)",
     category: "Vitamin D & Calcium",
     minAgeMonths: 0,
-    sourceNote: "Ultra-D3 syrup's concentration is UNVERIFIED and worth flagging prominently -- see that brand's own note below. A 20-fold concentration ambiguity on a vitamin D product is exactly the kind of thing that produces either a dangerously large or a clinically useless dose if guessed wrong; check the physical pack before relying on this row for that specific brand. All other brands here (Nutri-D, Kidrich-D3, Depura, Arachitol Nano, Calcirol) are confirmed at their stated concentrations.",
+    sourceNote: "Ultra-D3 syrup's concentration was flagged as unverified, briefly 'resolved' to 3,000 IU/5mL via bottle-total math, then REVERTED back to the original 1000 IU/5mL once an independently-researched audit confirmed that figure directly (status VERIFIED) rather than via inference -- see that brand's own note below. All other brands here (Nutri-D, Kidrich-D3, Depura, Arachitol Nano, Calcirol) are confirmed at their stated concentrations.",
     ageBased: true,
     ageBands: [
       {
@@ -1231,7 +1628,7 @@ const DRUGS = [
       { name: "Nutri-D (400 IU)", manufacturer: "Azveston", strengths: [{ iuPerMl: 400, displayLabel: "400 IU/mL drops" }] },
       { name: "Ultra-D3 drops (400 IU)", manufacturer: "Meyer", strengths: [{ iuPerMl: 400, displayLabel: "400 IU/mL drops" }] },
       { name: "Kidrich-D3 (800 IU)", manufacturer: "Dr Reddy's", strengths: [{ iuPerMl: 800, displayLabel: "800 IU/mL drops" }] },
-      { name: "Ultra-D3 syrup", manufacturer: "Meyer", strengths: [{ iuPerMl: 200, displayLabel: "Labeled '1000 IU, 100mL' -- UNVERIFIED whether this means 1000 IU per 5mL (assumed here) or 1000 IU total across the whole 100mL bottle (which would be ~50 IU/5mL, a ~20-fold lower concentration). Market listings only showed the bottle-level title, not a per-5mL figure. CHECK THE PHYSICAL PACK before dosing -- this ambiguity is large enough to matter." }] },
+      { name: "Ultra-D3 syrup", manufacturer: "Meyer", strengths: [{ iuPerMl: 200, displayLabel: "REVERTED to 1000 IU/5mL: the pharmacy-formulary bottle-total math (60,000 IU/100mL = 3,000 IU/5mL) that this app briefly used was an inference, not a direct confirmation, and the independently-researched master formulary audit confirms 1000 IU as the correct figure, status VERIFIED. The bottle-total figure was likely including overage/stability margin or using a different convention -- not a reliable basis for the per-dose concentration." }] },
       { name: "Depura (60,000 IU)", manufacturer: "Universal", strengths: [{ iuPerSachet: 60000, displayLabel: "60,000 IU/5mL single dose" }] },
       { name: "Arachitol Nano 60K", manufacturer: "Abbott", strengths: [{ iuPerSachet: 60000, displayLabel: "60,000 IU/5mL nano-emulsion" }] },
       { name: "Gran Calcirol", manufacturer: "Zydus Cadila", strengths: [{ iuPerSachet: 60000, displayLabel: "60,000 IU granule sachet" }] },
@@ -1241,6 +1638,10 @@ const DRUGS = [
   },
   {
     id: "calcium",
+    medExplain: "This is calcium (often with vitamin D) for bone health/deficiency.",
+    medWorking: "supports bone health over weeks–months.",
+    medEffects: "constipation, bloating.",
+    medStorage: "room temperature; shake well.",
     name: "Calcium (\u00b1 Vitamin D3/Zinc/Magnesium)",
     category: "Vitamin D & Calcium",
     minAgeMonths: 0,
@@ -1249,16 +1650,20 @@ const DRUGS = [
     ],
     defaultDurationDays: 30,
     brands: [
-      { name: "Calcimax+", manufacturer: "Meyer", strengths: [{ mgPer5ml: 250, displayLabel: "Verify exact elemental calcium content on label" }] },
-      { name: "Calcimax-P", manufacturer: "Meyer", strengths: [{ mgPer5ml: 250, displayLabel: "Verify exact elemental calcium content on label" }] },
-      { name: "Nucalci", manufacturer: "Azveston", strengths: [{ mgPer5ml: 250, displayLabel: "Verify exact elemental calcium content on label" }] },
-      { name: "Ossopan D (MCHC)", manufacturer: "TTK", strengths: [{ mgPer5ml: 250, displayLabel: "Microcrystalline hydroxyapatite complex -- verify elemental calcium equivalent" }] },
+      { name: "Calcimax+", manufacturer: "Meyer", strengths: [{ mgPer5ml: 250, displayLabel: "RESOLVED (web-verified): Elemental Calcium 250mg + Elemental Magnesium 75mg + Elemental Zinc 2mg + Vitamin D3 200IU per 5mL" }] },
+      { name: "Calcimax (plain)", manufacturer: "Meyer", strengths: [{ mgPer5ml: 150, displayLabel: "NEW, RESOLVED: Elemental Calcium 150mg + Elemental Magnesium 25mg + Elemental Zinc 1.5mg + Vitamin D3 200IU per 5mL -- lower-strength sibling to Calcimax+" }] },
+      { name: "Calcimax-P", manufacturer: "Meyer", strengths: [{ mgPer5ml: 150, displayLabel: "RESOLVED (6 converging sources): Elemental Calcium 150mg + Phosphorus 75mg + Magnesium 37.5mg + Zinc 2mg + Vitamin D3 100IU per 5mL -- derived by halving the one source that explicitly stated 'per 10mL' (300/150/75/4mg/200IU); worth a quick pack check on this specific unit assumption" }] },
+      { name: "Ossopan D (MCHC)", manufacturer: "TTK", strengths: [{ mgPer5ml: 125, displayLabel: "RESOLVED (5 converging sources): Elemental Calcium 125mg (as MCHC, confirmed) + Phosphorus 55mg + Vitamin D3 125-200IU per 5mL (minor IU variance across sources, calcium/phosphorus consistent)" }] },
     ],
     adminNote: "Give WITH FOOD. Separate calcium from iron and from levothyroxine (if applicable) by \u22652h.",
-    notes: "Elemental calcium content varies by product (carbonate vs phosphate vs hydroxyapatite complex all have different elemental-calcium yields per mg) -- the strength shown is a placeholder; confirm the actual elemental calcium content on each specific product's label before dosing.",
+    notes: "CORRECTION: Nucalci (Azveston) removed entirely -- web research found two genuinely conflicting compositions attributed to this brand/manufacturer (one simple Calcium Carbonate+B12+D3 formula, one multi-mineral Ca+Mg+P+Zn+D3 formula with no B12), and neither could be confirmed over the other. The other three brands above are now web-verified with real elemental-calcium figures, resolving the earlier 'verify on label' placeholder.",
   },
   {
     id: "vitamin-a",
+    medExplain: "This is vitamin A, for measles or vitamin-A deficiency.",
+    medWorking: "supports recovery/eye health.",
+    medEffects: "transient — bulging fontanelle/vomiting if overdosed; use exact age-based dosing.",
+    medStorage: "protect from light.",
     name: "Vitamin A (oral \u2014 measles / deficiency)",
     category: "Vitamin D & Calcium",
     topicalOnly: true,
@@ -1275,6 +1680,10 @@ const DRUGS = [
   // ================= CNS / ELECTROLYTE =================
   {
     id: "triclofos",
+    medExplain: "This is a sedative used to settle a child for a procedure/scan (e.g., EEG, imaging).",
+    medWorking: "drowsiness within ~30–45 min.",
+    medEffects: "drowsiness, occasional paradoxical excitement, GI upset; monitor breathing — do not combine with other sedatives.",
+    medStorage: "room temperature.",
     name: "Triclofos Sodium",
     category: "CNS / Electrolyte",
     minAgeMonths: 0,
@@ -1290,6 +1699,10 @@ const DRUGS = [
   },
   {
     id: "levetiracetam",
+    medExplain: "This is levetiracetam, a daily medicine to prevent seizures.",
+    medWorking: "seizure control with regular use; never stop abruptly.",
+    medEffects: "sleepiness, irritability, behaviour/mood changes — report significant mood or behaviour change.",
+    medStorage: "room temperature.",
     name: "Levetiracetam",
     category: "CNS / Electrolyte",
     topicalOnly: true,
@@ -1303,6 +1716,10 @@ const DRUGS = [
   },
   {
     id: "potassium-chloride",
+    medExplain: "This is potassium, to correct/prevent low potassium.",
+    medWorking: "corrects levels over days — needs blood-test monitoring.",
+    medEffects: "GI irritation, nausea; caution with kidney impairment.",
+    medStorage: "room temperature.",
     name: "Potassium Chloride",
     category: "CNS / Electrolyte",
     minAgeMonths: 0,
@@ -1317,9 +1734,160 @@ const DRUGS = [
     adminNote: "Dilute and give with food to reduce GI irritation.",
     notes: "",
   },
+  {
+    id: "caffeine-citrate",
+    name: "Caffeine Citrate (apnea of prematurity)",
+    category: "CNS / Electrolyte",
+    minAgeMonths: 0,
+    medExplain: "This is caffeine citrate, used to stimulate breathing and reduce pauses in breathing (apnea) in premature or very young infants.",
+    medWorking: "reduces apnea episodes; effect is monitored clinically and often with apnea monitoring, not a single visible sign.",
+    medEffects: "jitteriness, tachycardia, feeding intolerance \u2014 report excessive irritability or poor feeding.",
+    medStorage: "room temperature; protect from light.",
+    doseOptions: [
+      { id: "loading", label: "Loading dose, ONCE (caffeine citrate)", low: 20, high: 20, freq: 1, maxDay: 9999, singleDoseMax: 9999, singleCourse: true },
+      { id: "maintenance", label: "Maintenance, once daily (caffeine citrate), starting 24h after loading", low: 5, high: 10, freq: 1, maxDay: 9999 },
+    ],
+    sourceNote: "ADDED AGENT from the master formulary review, directly relevant to neonatal practice \u2014 found as Apnicaf/Cafneon-OS/Capnea (20mg/mL caffeine citrate oral solution), status VERIFIED. Standard neonatal apnea-of-prematurity regimen: loading 20mg/kg caffeine citrate once, then maintenance 5-10mg/kg/day caffeine citrate once daily starting 24h after the loading dose (AAP Red Book-adjacent neonatal convention; Eichenwald, Pediatrics, 2016). Figures are for caffeine CITRATE, not caffeine base (citrate = 2x base by weight) \u2014 confirm which the product/order is expressed in before dosing, since a 2-fold mix-up here is a realistic error.",
+    defaultDurationDays: 1,
+    brands: [
+      { name: "Apnicaf", manufacturer: "Abbott Life Care", strengths: [{ mgPerMl: 20, displayLabel: "20mg/mL oral solution (caffeine citrate)" }] },
+      { name: "Cafneon-OS", manufacturer: "Neon", strengths: [{ mgPerMl: 20, displayLabel: "20mg/mL oral solution (caffeine citrate)" }] },
+      { name: "Capnea", manufacturer: "Cipla", strengths: [{ mgPerMl: 20, displayLabel: "20mg/mL oral solution (caffeine citrate)" }] },
+    ],
+    adminNote: "With or without food. Monitor heart rate; this is typically a neonatal-unit/NICU-directed therapy rather than a routine OPD prescription.",
+    precaution: "Narrow margin between therapeutic and toxic effect at the extremes of dosing in very young/low-weight infants \u2014 individualize carefully, this is not a drug to dose by a simple lookup alone despite the calculator offering a figure.",
+    notes: "",
+  },
+  {
+    id: "furosemide",
+    name: "Furosemide (loop diuretic)",
+    category: "CNS / Electrolyte",
+    minAgeMonths: 0,
+    medExplain: "This is furosemide, a water pill (diuretic) used to reduce excess fluid.",
+    medWorking: "increased urination within 30-60 minutes of an oral dose; swelling/fluid overload improves over hours to days.",
+    medEffects: "dehydration, electrolyte disturbance (low potassium/sodium) \u2014 needs monitoring with ongoing use; increased urination is expected.",
+    medStorage: "room temperature; protect from light.",
+    doseOptions: [
+      { id: "standard", label: "1-2mg/kg/dose, once or twice daily", low: 1, high: 4, freq: 2, maxDay: 9999 },
+    ],
+    sourceNote: "ADDED AGENT from the master formulary review \u2014 found as Furoped Susp (Samarth). CORRECTION: concentration confirmed at 10mg/mL (not 10mg/5mL as this app initially guessed) \u2014 a 5-fold difference that would have meant a 5x-too-large volume if left uncorrected. Standard pediatric oral dose: 1-2mg/kg/dose, once or twice daily (Harriet Lane convention); higher doses used in refractory edema under specialist direction.",
+    defaultDurationDays: 5,
+    brands: [
+      { name: "Furoped", manufacturer: "Samarth", strengths: [{ mgPerMl: 10, displayLabel: "CORRECTED per Dr. Gowdar's direct confirmation: 10mg/mL, not 10mg/5mL -- a 5-fold concentration difference" }] },
+    ],
+    adminNote: "Morning dosing (or morning+early afternoon if BID) to avoid nighttime urination. Monitor hydration and electrolytes with ongoing use.",
+    precaution: "Electrolyte and fluid status need monitoring with regular use \u2014 not a drug for casual/unsupervised repeated dosing.",
+    notes: "",
+  },
+  {
+    id: "digoxin",
+    name: "Digoxin",
+    category: "CNS / Electrolyte",
+    topicalOnly: true,
+    minAgeMonths: 0,
+    medExplain: "This is digoxin, a heart medicine that helps the heart beat more effectively.",
+    medWorking: "per the treating specialist's plan; effects are monitored by heart rate, symptoms, and blood levels, not a simple home sign.",
+    medEffects: "nausea, vomiting, visual changes, slow/irregular heartbeat \u2014 these can indicate TOXICITY; seek urgent care if they occur.",
+    medStorage: "room temperature; keep strictly out of reach \u2014 overdose is dangerous even in small amounts.",
+    sig: "NOT AUTO-CALCULATED \u2014 narrow therapeutic index, individualized specialist dosing with level monitoring required",
+    brands: [
+      { name: "Dixin", manufacturer: "Samarth", strengths: [{ displayLabel: "50mcg/mL syrup -- exact concentration not independently confirmed; verify on label" }] },
+    ],
+    precaution: "NARROW THERAPEUTIC INDEX \u2014 toxicity and therapeutic effect are close together; dosing must be individualized by a specialist with level monitoring, not calculated from a simple formula. This entry exists so the drug isn't silently missing from the pharmacy list, not to calculate its dose. Drug interactions (e.g., with diuretics affecting potassium) and renal function materially affect dosing.",
+    notes: "Flagged CLINICAL REVIEW REQUIRED in the master formulary audit \u2014 consistent with this drug's genuine narrow-therapeutic-index risk profile.",
+  },
+  {
+    id: "clobazam",
+    name: "Clobazam (anticonvulsant)",
+    category: "CNS / Electrolyte",
+    topicalOnly: true,
+    minAgeMonths: 0,
+    medExplain: "This is clobazam, an anti-seizure medicine.",
+    medWorking: "seizure frequency/severity is tracked by the prescribing specialist over the titration period, not a quick home sign.",
+    medEffects: "drowsiness, behavior change \u2014 report any new or worsening symptoms to the prescribing specialist.",
+    medStorage: "room temperature; keep strictly out of reach.",
+    sig: "NOT AUTO-CALCULATED \u2014 individualized specialist titration required, same caution as this app's other anticonvulsants",
+    brands: [
+      { name: "Frisium", manufacturer: "Cipla", strengths: [{ displayLabel: "5mg/5mL suspension" }] },
+    ],
+    precaution: "Anti-epileptic requiring individualized specialist titration over weeks \u2014 inappropriate for a simple lookup-table dose. This entry exists so the drug isn't silently missing from the pharmacy list, not to calculate its dose.",
+    notes: "",
+  },
+  {
+    id: "oxcarbazepine",
+    name: "Oxcarbazepine (anticonvulsant)",
+    category: "CNS / Electrolyte",
+    topicalOnly: true,
+    minAgeMonths: 0,
+    medExplain: "This is oxcarbazepine, an anti-seizure medicine.",
+    medWorking: "seizure frequency/severity is tracked by the prescribing specialist over the titration period.",
+    medEffects: "drowsiness, dizziness, rash (report rash promptly), low sodium with prolonged use.",
+    medStorage: "room temperature; keep strictly out of reach.",
+    sig: "NOT AUTO-CALCULATED \u2014 individualized specialist titration required, same caution as this app's other anticonvulsants",
+    brands: [
+      { name: "Oxetol", manufacturer: "Sun Pharma", strengths: [{ displayLabel: "300mg/5mL suspension" }] },
+    ],
+    precaution: "Anti-epileptic requiring individualized specialist titration over weeks \u2014 inappropriate for a simple lookup-table dose. This entry exists so the drug isn't silently missing from the pharmacy list, not to calculate its dose.",
+    notes: "",
+  },
+  {
+    id: "sodium-valproate",
+    name: "Sodium Valproate (anticonvulsant)",
+    category: "CNS / Electrolyte",
+    topicalOnly: true,
+    minAgeMonths: 0,
+    medExplain: "This is sodium valproate, an anti-seizure medicine.",
+    medWorking: "seizure frequency/severity is tracked by the prescribing specialist over the titration period.",
+    medEffects: "nausea, tremor, weight gain, hair thinning; report easy bruising/bleeding or jaundice promptly (rare liver/platelet effects).",
+    medStorage: "room temperature; keep strictly out of reach.",
+    sig: "NOT AUTO-CALCULATED \u2014 individualized specialist titration required, same caution as this app's other anticonvulsants",
+    brands: [
+      { name: "Encorate", manufacturer: "Sun Pharma", strengths: [{ displayLabel: "200mg/5mL syrup" }] },
+    ],
+    precaution: "Anti-epileptic requiring individualized specialist titration over weeks \u2014 inappropriate for a simple lookup-table dose. AVOID in known/suspected mitochondrial disease and in pregnancy-capable adolescents without specific counseling (teratogenicity). This entry exists so the drug isn't silently missing from the pharmacy list, not to calculate its dose.",
+    notes: "",
+  },
+  {
+    id: "phenobarbitone",
+    name: "Phenobarbitone (anticonvulsant)",
+    category: "CNS / Electrolyte",
+    topicalOnly: true,
+    minAgeMonths: 0,
+    medExplain: "This is phenobarbitone, an anti-seizure medicine, often used in younger infants.",
+    medWorking: "seizure frequency/severity is tracked by the prescribing specialist over the titration period.",
+    medEffects: "sedation, irritability (paradoxical in some young children) \u2014 report excessive drowsiness or behavior change.",
+    medStorage: "room temperature; keep strictly out of reach.",
+    sig: "NOT AUTO-CALCULATED \u2014 individualized specialist titration required, same caution as this app's other anticonvulsants",
+    brands: [
+      { name: "Gardenal", manufacturer: "Abbott", strengths: [{ displayLabel: "20mg/5mL syrup" }] },
+    ],
+    precaution: "Anti-epileptic requiring individualized specialist titration \u2014 inappropriate for a simple lookup-table dose. This entry exists so the drug isn't silently missing from the pharmacy list, not to calculate its dose.",
+    notes: "",
+  },
+  {
+    id: "phenytoin",
+    name: "Phenytoin (anticonvulsant)",
+    category: "CNS / Electrolyte",
+    topicalOnly: true,
+    minAgeMonths: 0,
+    medExplain: "This is phenytoin, an anti-seizure medicine.",
+    medWorking: "seizure frequency/severity is tracked by the prescribing specialist over the titration period, with blood level monitoring.",
+    medEffects: "gum swelling with long-term use, drowsiness, rash (report rash promptly), unsteady gait \u2014 can indicate levels are too high.",
+    medStorage: "room temperature; keep strictly out of reach.",
+    sig: "NOT AUTO-CALCULATED \u2014 individualized specialist titration with level monitoring required, same caution as this app's other anticonvulsants",
+    brands: [
+      { name: "Eptoin", manufacturer: "Abbott", strengths: [{ displayLabel: "30mg/5mL suspension" }] },
+    ],
+    precaution: "Anti-epileptic with narrow therapeutic index requiring individualized specialist titration and level monitoring \u2014 inappropriate for a simple lookup-table dose. Non-linear kinetics mean small dose changes can cause large level changes. This entry exists so the drug isn't silently missing from the pharmacy list, not to calculate its dose.",
+    notes: "",
+  },
   // ================= ENT / OPHTHALMIC (topical, instruction-only) =================
   {
     id: "saline-nasal",
+    medExplain: "This is saline for a blocked/stuffy nose — safe and non-medicated.",
+    medWorking: "loosens mucus, eases feeding/breathing immediately.",
+    medEffects: "none significant.",
+    medStorage: "room temperature.",
     name: "Saline Nasal Drops/Spray",
     category: "ENT / Ophthalmic",
     topicalOnly: true,
@@ -1328,6 +1896,7 @@ const DRUGS = [
   },
   {
     id: "oxymetazoline",
+    medExplain: "Decongestant nasal drops are listed for recognition, not for prescribing: risk of rebound congestion and systemic effects in young children. Counsel families to use saline instead.",
     name: "Oxymetazoline (nasal decongestant)",
     category: "ENT / Ophthalmic",
     topicalOnly: true,
@@ -1342,6 +1911,10 @@ const DRUGS = [
   },
   {
     id: "cipro-eye",
+    medExplain: "These are antibiotic drops for eye (conjunctivitis) or ear infection; the -D version adds a steroid.",
+    medWorking: "improvement over 1–3 days.",
+    medEffects: "transient stinging; don't touch the dropper tip to the eye/ear.",
+    medStorage: "room temperature; discard per label after opening.",
     name: "Ciprofloxacin (eye/ear drops)",
     category: "ENT / Ophthalmic",
     topicalOnly: true,
@@ -1355,6 +1928,10 @@ const DRUGS = [
   },
   {
     id: "moxifloxacin-eye",
+    medExplain: "These are antibiotic eye drops for bacterial conjunctivitis.",
+    medWorking: "redness/discharge improve over 1–3 days.",
+    medEffects: "transient stinging.",
+    medStorage: "room temperature.",
     name: "Moxifloxacin (eye drops)",
     category: "ENT / Ophthalmic",
     topicalOnly: true,
@@ -1364,6 +1941,10 @@ const DRUGS = [
   },
   {
     id: "tobramycin-eye",
+    medExplain: "These are antibiotic eye drops for bacterial eye infection.",
+    medWorking: "improvement over 1–3 days.",
+    medEffects: "transient stinging, lid itching.",
+    medStorage: "room temperature.",
     name: "Tobramycin (eye drops)",
     category: "ENT / Ophthalmic",
     topicalOnly: true,
@@ -1372,6 +1953,10 @@ const DRUGS = [
   },
   {
     id: "artificial-tears",
+    medExplain: "These are lubricating drops for dry/irritated eyes.",
+    medWorking: "immediate comfort.",
+    medEffects: "transient blurring.",
+    medStorage: "per label after opening.",
     name: "Artificial Tears / Lubricants",
     category: "ENT / Ophthalmic",
     topicalOnly: true,
@@ -1380,6 +1965,7 @@ const DRUGS = [
   },
   {
     id: "clinician-only-eye",
+    medExplain: "Recognition / in-clinic use only. Not for home use. Proparacaine is a topical anaesthetic for procedures; Itrop Plus dilates the pupil for fundus exam. Counsel the family that vision will be blurred and the pupil large for some hours after a dilated exam, with light sensitivity.",
     name: "Clinician-Administered Eye Drops (mydriatic/anesthetic)",
     category: "ENT / Ophthalmic",
     topicalOnly: true,
@@ -1392,6 +1978,10 @@ const DRUGS = [
   },
   {
     id: "ear-combo",
+    medExplain: "Otogesic is an antibiotic/anaesthetic ear drop for ear infection/pain; Otorex/Soliwax softens ear wax.",
+    medWorking: "pain eases over hours–days (infection drops); wax softens over days (ceruminolytic).",
+    medEffects: "transient stinging.",
+    medStorage: "room temperature.",
     name: "Ear Combination Drops (antibiotic/ceruminolytic)",
     category: "ENT / Ophthalmic",
     topicalOnly: true,
@@ -1404,6 +1994,7 @@ const DRUGS = [
   },
   {
     id: "sinarest-family",
+    medExplain: "Multi-ingredient cold combinations containing a decongestant/antihistamine are discouraged in children; counsel against routine use and favour single-agent paracetamol plus saline/supportive care [24].",
     name: "Sinarest range (Paracetamol/Phenylephrine/Chlorpheniramine combinations)",
     category: "ENT / Ophthalmic",
     topicalOnly: true,
@@ -1420,6 +2011,10 @@ const DRUGS = [
   // ================= TOPICAL DERMATOLOGICAL =================
   {
     id: "topical-steroid",
+    medExplain: "This is a steroid cream to settle an inflamed, itchy rash/eczema flare.\" Match potency to age/site — low potency (desonide/hydrocortisone) for face and infants.",
+    medWorking: "redness/itch settle over a few days.",
+    medEffects: "with overuse — skin thinning, especially on face/folds; use the lowest effective potency for the shortest time.",
+    medStorage: "room temperature.",
     name: "Topical Corticosteroids (single agent)",
     category: "Topical Dermatological",
     topicalOnly: true,
@@ -1439,6 +2034,7 @@ const DRUGS = [
   },
   {
     id: "topical-steroid-fdc",
+    medExplain: "These combinations (often containing potent/super-potent steroids) worsen tinea and cause skin damage; counsel against use and prescribe a single-agent antifungal or steroid as appropriate.",
     name: "Topical Steroid + Antifungal \u00b1 Antibiotic FDCs",
     category: "Topical Dermatological",
     topicalOnly: true,
@@ -1457,6 +2053,10 @@ const DRUGS = [
   },
   {
     id: "topical-antifungal",
+    medExplain: "This is clotrimazole, an antifungal for ringworm, candida, or (mouthpaint) oral thrush.",
+    medWorking: "improvement over 1–2 weeks.",
+    medEffects: "mild local irritation.",
+    medStorage: "room temperature.",
     name: "Topical Antifungals (single agent)",
     category: "Topical Dermatological",
     topicalOnly: true,
@@ -1468,6 +2068,10 @@ const DRUGS = [
   },
   {
     id: "topical-antibiotic",
+    medExplain: "This is an antibiotic/antiseptic for impetigo, infected sores, or wound care.",
+    medWorking: "impetigo improves over days.",
+    medEffects: "local irritation.",
+    medStorage: "room temperature.",
     name: "Topical Antibiotics / Antiseptics (single agent)",
     category: "Topical Dermatological",
     topicalOnly: true,
@@ -1481,6 +2085,10 @@ const DRUGS = [
   },
   {
     id: "emollients-topical",
+    medExplain: "This is a moisturiser/barrier cream — the foundation of eczema and dry-skin care.",
+    medWorking: "skin softens and itch reduces with consistent use; ongoing/maintenance use.",
+    medEffects: "generally none; lanolin (Nipcare) can cause allergy in sensitised children.",
+    medStorage: "room temperature.",
     name: "Emollients, Barrier & Cleanser Products",
     category: "Topical Dermatological",
     topicalOnly: true,
@@ -1503,6 +2111,10 @@ const DRUGS = [
   },
   {
     id: "antipruritic-topical",
+    medExplain: "Calamine soothes itch/mild rashes; B4 Nappi is a barrier cream for nappy rash.",
+    medWorking: "calamine gives quick soothing; barrier cream protects and heals nappy rash over days.",
+    medEffects: "minimal. Crea Anovate (phenylephrine/beclomethasone/lidocaine) is an anorectal cream — confirm the indication before use.",
+    medStorage: "room temperature; shake calamine lotions.",
     name: "Antipruritic / Calamine / Diaper Products",
     category: "Topical Dermatological",
     topicalOnly: true,
@@ -1518,6 +2130,10 @@ const DRUGS = [
   },
   {
     id: "prilox-anesthetic",
+    medExplain: "This is a numbing cream to reduce pain before a blood test/cannula/minor procedure.",
+    medWorking: "numbs the skin after ~60 min.",
+    medEffects: "transient paleness/redness at the site.",
+    medStorage: "room temperature.",
     name: "Prilox-5 (Lidocaine + Prilocaine, topical anesthetic)",
     category: "Topical Dermatological",
     topicalOnly: true,
@@ -1528,6 +2144,10 @@ const DRUGS = [
   },
   {
     id: "zytee-oral-gel",
+    medExplain: "This is a gel for painful mouth ulcers/teething soreness.",
+    medWorking: "eases local pain for a short period.",
+    medEffects: "transient stinging.",
+    medStorage: "room temperature.",
     name: "Zytee-RB (Choline salicylate + Benzalkonium chloride, oral mucosa gel)",
     category: "ENT / Ophthalmic",
     topicalOnly: true,
@@ -1538,6 +2158,10 @@ const DRUGS = [
   },
   {
     id: "scabies-anesthetic-topical",
+    medExplain: "This is permethrin, the first-line treatment for scabies (and lice). / This numbs a surface before a minor procedure (e.g., catheter, mucosa). / This is a topical anti-inflammatory spray for muscle/joint pain.",
+    medWorking: "mites are killed, but itch can persist 2–4 weeks after successful treatment (not treatment failure). | numbs within minutes. | eases local pain over ~30 min.",
+    medEffects: "transient burning/stinging, itch.; transient stinging; systemic toxicity if overdosed.; local irritation; systemic NSAID effects are minimal but possible with large areas.",
+    medStorage: "room temperature.; room temperature; flammable — keep from heat/flame.",
     name: "Scabies / Topical Anesthetics / Musculoskeletal",
     category: "Topical Dermatological",
     topicalOnly: true,
@@ -1605,6 +2229,9 @@ const ROUTE_OVERRIDES = {
   "salbutamol-neb": "Nebulized / Inhaled",
   "budesonide-neb": "Nebulized",
   "ipratropium-neb": "Nebulized / Inhaled",
+  "budesonide-levosalbutamol-neb": "Nebulized",
+  "laba-ics-combo": "Inhaled (MDI/Respule)",
+  "hypertonic-saline-neb": "Nebulized",
   "intranasal-steroid": "Nasal",
   "nystatin-oral": "Oral (swish/paint)",
   "epinephrine-im": "Intramuscular (anterolateral thigh)",
@@ -1638,6 +2265,7 @@ function pdfEscape(s) {
     .replace(/\u00d7/g, "x").replace(/\u00f7/g, "/")
     .replace(/\u2264/g, "<=").replace(/\u2265/g, ">=")
     .replace(/\u26a0/g, "/!\\").replace(/\u2026/g, "...")
+    .replace(/\u00b7/g, "-").replace(/\u2248/g, "~")
     .replace(/[^\x20-\x7e]/g, "?")
     .replace(/\\/g, "\\\\").replace(/\(/g, "\\(").replace(/\)/g, "\\)");
 }
@@ -1751,22 +2379,34 @@ function downloadRxPDF(rows, calc, patientName, sex, ageLabel, weight, heightCm,
     const route = getRoute(result.drug);
     const clockTimes = sigToClockTimes(result.sig);
     
+    const isOralAntibioticPdf = result.drug.category === "Antibiotics / Antivirals / Antiparasitics" && !result.drug.topicalOnly && route === "Oral";
+
     writeLine(`${idx + 1}. ${result.drug.discouraged ? "[DISCOURAGED] " : ""}${result.brand.name} - ${strengthLabel(result.strength)}`, { size: 11, bold: true, gapAfter: 6 });
-    if (result.doseText) writeLine(`Dose derivation: ${result.formula || result.doseText}`, { size: 9, gapAfter: 5 });
-    writeLine(`Sig: ${result.sig}`, { size: 10, gapAfter: 5 });
-    
-    let infoLine = `Frequency: ${clockTimes}  |  Route: ${route}`;
-    if (!result.drug.topicalOnly && !result.isSingleCourse) infoLine += `  |  Duration: ${row.durationDays} days`;
-    if (result.totalVolMl) infoLine += `  |  Dispense: ~${result.totalVolMl} mL`;
-    
-    writeLine(infoLine, { size: 9, gapAfter: 5 });
-    if (result.drug.adminNote) writeLine(`Administration: ${result.drug.adminNote}`, { size: 9, gapAfter: 5 });
+    if (result.drug.medExplain) writeLine(`"${result.drug.medExplain}"`, { size: 9, gapAfter: 5 });
+
+    if (!result.drug.discouraged) {
+      if (result.doseText) writeLine(`Dose derivation: ${result.formula || result.doseText}`, { size: 9, gapAfter: 5 });
+      writeLine(`Give: ${result.sig}`, { size: 10, gapAfter: 5 });
+
+      let infoLine = `Give it: ${route}  |  Timing: ${clockTimes}`;
+      if (!result.drug.topicalOnly && !result.isSingleCourse) infoLine += `  |  Duration: ${row.durationDays} days${isOralAntibioticPdf ? " - complete the FULL course" : ""}`;
+      if (result.totalVolMl) infoLine += `  |  Dispense: ~${result.totalVolMl} mL`;
+      writeLine(infoLine, { size: 9, gapAfter: 5 });
+
+      if (result.drug.medWorking) writeLine(`You'll know it's working: ${result.drug.medWorking}`, { size: 9, gapAfter: 5 });
+      if (result.drug.adminNote) writeLine(`Administration: ${result.drug.adminNote}`, { size: 9, gapAfter: 5 });
+      if (result.drug.medEffects) writeLine(`Watch for: ${result.drug.medEffects}`, { size: 9, gapAfter: 5 });
+      if (result.drug.medStorage) writeLine(`Storage: ${result.drug.medStorage}`, { size: 9, gapAfter: 5 });
+    }
     if (result.precaution) writeLine(`/!\\ ${result.precaution}`, { size: 9, gapAfter: 5 });
     y += 8;
   });
-  
+
+  ensureSpace(40);
+  writeLine("Storage & supply (every medicine above): store up/away/out of sight; supply an oral syringe sized to the dose; keep it with that medicine; explain refills. mL only, never teaspoons.", { size: 8, gapAfter: 10 });
+
   ensureSpace(60);
-  y += 36;
+  y += 26;
   writeLine("Signature: ______________________", { size: 9 });
   
   try {
@@ -1809,20 +2449,33 @@ function copyRxText(rows, calc, patientName, sex, ageLabel, weight, heightCm, ag
     const route = getRoute(result.drug);
     const clockTimes = sigToClockTimes(result.sig);
     
+    const isOralAntibioticCopy = result.drug.category === "Antibiotics / Antivirals / Antiparasitics" && !result.drug.topicalOnly && route === "Oral";
+
     lines.push(`${idx + 1}. ${result.drug.discouraged ? "[DISCOURAGED] " : ""}${result.brand.name} \u2014 ${strengthLabel(result.strength)}`);
-    if (result.doseText) lines.push(`   Dose derivation: ${result.formula || result.doseText}`);
-    lines.push(`   Sig: ${result.sig}`);
-    
-    let infoLine = `   Frequency (clock times): ${clockTimes}  |  Route: ${route}`;
-    if (!result.drug.topicalOnly && !result.isSingleCourse) infoLine += `  |  Duration: ${row.durationDays} days`;
-    if (result.totalVolMl) infoLine += `  |  Dispense: ~${result.totalVolMl} mL`;
-    
-    lines.push(infoLine);
-    if (result.drug.adminNote) lines.push(`   Administration & counseling: ${result.drug.adminNote}`);
+    if (result.drug.medExplain) lines.push(`   "${result.drug.medExplain}"`);
+
+    if (!result.drug.discouraged) {
+      if (result.doseText) lines.push(`   Dose derivation: ${result.formula || result.doseText}`);
+      lines.push(`   Give: ${result.sig}`);
+
+      let infoLine = `   Give it: ${route}  |  Timing: ${clockTimes}`;
+      if (!result.drug.topicalOnly && !result.isSingleCourse) infoLine += `  |  Duration: ${row.durationDays} days${isOralAntibioticCopy ? " -- complete the FULL course" : ""}`;
+      if (result.totalVolMl) infoLine += `  |  Dispense: ~${result.totalVolMl} mL`;
+      lines.push(infoLine);
+
+      if (result.drug.medWorking) lines.push(`   You'll know it's working: ${result.drug.medWorking}`);
+      if (result.drug.adminNote) lines.push(`   Administration & counseling: ${result.drug.adminNote}`);
+      if (result.drug.medEffects) lines.push(`   Watch for: ${result.drug.medEffects}`);
+      if (result.drug.medStorage) lines.push(`   Storage: ${result.drug.medStorage}`);
+    }
     if (result.precaution) lines.push(`   \u26a0 ${result.precaution}`);
     lines.push("");
   });
-  
+
+  if (rows.some((r) => { const res = calc(r); return !res.error && !res.belowAge && !res.belowWeight && !res.drug.discouraged; })) {
+    lines.push("Storage & supply (every medicine above): store up/away/out of sight; supply an oral syringe sized to the dose; keep it with that medicine; explain refills. mL only, never teaspoons.");
+  }
+
   const text = lines.join("\n");
   if (navigator.clipboard && navigator.clipboard.writeText) {
     navigator.clipboard.writeText(text).catch(() => {
@@ -1844,6 +2497,21 @@ function sliderStep(low, high, isGramDose) {
   return 100;
 }
 
+function handleBrandChange(drug, newBrandIdx) {
+  // A brand can carry doseOptionHint, pointing at the doseOptions entry that actually applies to
+  // it (e.g. Tasiron's liposomal regimen vs every other iron brand's conventional-salt regimen).
+  // Switching brands must re-check this -- picking a new brand without updating the regimen is
+  // exactly how a Tasiron dose silently kept computing against the wrong (conventional) range.
+  const patch = { brandIdx: newBrandIdx, strengthIdx: 0 };
+  if (drug.doseOptions && drug.doseOptions.length) {
+    const newBrand = drug.brands[newBrandIdx];
+    const hint = newBrand && newBrand.doseOptionHint;
+    const targetOpt = (hint && drug.doseOptions.find((o) => o.id === hint)) || drug.doseOptions[0];
+    patch.doseOptionId = targetOpt.id;
+    patch.mgPerKg = midpoint(targetOpt);
+  }
+  return patch;
+}
 function midpoint(opt) {
   const low = opt.low != null ? opt.low : opt.lowDose;
   const high = opt.high != null ? opt.high : opt.highDose;
@@ -2041,7 +2709,14 @@ export default function RxCalculator() {
     }
 
     // ---- Weight-band table ----
-    const hasDualMode = drug.weightBandTable && drug.doseOptions;
+    // A drug can have weightBandTable + doseOptions for two different reasons: a genuine
+    // alternate mg/kg formula (Ondansetron, Esomeprazole -- doseOptions carry low/high or
+    // lowDose/highDose) vs. a frequency-only selector for the SAME weight-band numbers
+    // (Penicillin V -- doseOptions carry only freq, no dosing range at all). Only the first
+    // case is a real "dual mode" worth a toggle; the second would show a broken "mg/kg
+    // calculation" option that computes NaN, since there is no mg/kg range to compute from.
+    const hasDosingRangeOptions = drug.doseOptions && drug.doseOptions.some((o) => o.low != null || o.lowDose != null || o.high != null || o.highDose != null);
+    const hasDualMode = drug.weightBandTable && hasDosingRangeOptions;
     const useWeightBand = drug.weightBandTable && (!hasDualMode || row.dosingMode === "weightband"); // fallback strictly to weightband
 
     if (useWeightBand) {
@@ -2064,8 +2739,12 @@ export default function RxCalculator() {
       const band = drug.weightBands.find((b) => weightKg <= b.maxKg);
       const units = amountToUnits(band.mg, strength, "mg");
       
+      // opt may be a genuine frequency-selector option (Penicillin V's TID/BID, opt.freq defined)
+      // or, for a dual-mode drug like Ondansetron/Esomeprazole defaulting to weight-band mode, the
+      // unrelated mg/kg-alternative option (no .freq field at all -- it uses freqLabel instead).
+      // Only trust opt.freq when it's actually a number, or wbFreq silently becomes "undefined".
       const opt = drug.doseOptions ? drug.doseOptions.find(o => o.id === row.doseOptionId) : null;
-      const wbFreq = opt ? opt.freq : (drug.weightBandFreqPerDay || 1);
+      const wbFreq = (opt && typeof opt.freq === "number") ? opt.freq : (drug.weightBandFreqPerDay || 1);
       const showDuration = drug.weightBandShowDuration || false;
       
       const freqWord = wbFreq === 1 ? (showDuration ? "once daily" : "once (single dose)") : wbFreq === 2 ? "twice daily (BID)" : wbFreq === 3 ? "three times daily (TID)" : `${wbFreq} times daily`;
@@ -2303,7 +2982,7 @@ export default function RxCalculator() {
                   </div>
                 )}
                 
-                {drug.weightBandTable && drug.doseOptions && (
+                {drug.weightBandTable && drug.doseOptions && drug.doseOptions.some((o) => o.low != null || o.lowDose != null || o.high != null || o.highDose != null) && (
                   <div style={{ marginTop: 10, background: "#f0f7f4", borderRadius: 6, padding: 8 }}>
                     <label style={{ fontSize: 12, color: "#666", display: "block", marginBottom: 4, fontWeight: 600 }}>Dosing method</label>
                     <div style={{ display: "flex", gap: 16 }}>
@@ -2319,7 +2998,7 @@ export default function RxCalculator() {
                   </div>
                 )}
                 
-                {drug.doseOptions && (!drug.weightBandTable || row.dosingMode === "mgkg") && (
+                {drug.doseOptions && (!drug.weightBandTable || row.dosingMode === "mgkg" || !drug.doseOptions.some((o) => o.low != null || o.lowDose != null || o.high != null || o.highDose != null)) && (
                   <div style={{ display: "flex", gap: 10, marginTop: 10, flexWrap: "wrap" }}>
                     <div style={{ flex: "1 1 260px" }}>
                       <label style={{ fontSize: 12, color: "#666", display: "block", marginBottom: 4 }}>Indication / regimen</label>
@@ -2374,7 +3053,7 @@ export default function RxCalculator() {
                     <label style={{ fontSize: 12, color: "#666", display: "block", marginBottom: 4 }}>Brand</label>
                     <select
                       value={row.brandIdx}
-                      onChange={(e) => updateRow(row.rowId, { brandIdx: parseInt(e.target.value), strengthIdx: 0 })}
+                      onChange={(e) => updateRow(row.rowId, handleBrandChange(drug, parseInt(e.target.value)))}
                       style={{ width: "100%", padding: "6px 8px", borderRadius: 6, border: "1px solid #ccc", fontSize: 13, boxSizing: "border-box" }}
                     >
                       {drug.brands.map((b, i) => <option key={i} value={i}>{b.name} ({b.manufacturer})</option>)}
@@ -2471,31 +3150,63 @@ export default function RxCalculator() {
             const route = getRoute(result.drug);
             const clockTimes = sigToClockTimes(result.sig);
             
+            const isOralAntibiotic = result.drug.category === "Antibiotics / Antivirals / Antiparasitics" && !result.drug.topicalOnly && route === "Oral";
+
             return (
-              <div key={row.rowId} style={{ marginBottom: 18, paddingBottom: 14, borderBottom: idx < rows.length - 1 ? "1px solid #eee" : "none" }}>
+              <div key={row.rowId} style={{ marginBottom: 20, paddingBottom: 16, borderBottom: idx < rows.length - 1 ? "1px solid #eee" : "none" }}>
                 <div style={{ fontSize: 14, fontWeight: 700 }}>
                   {`${idx + 1}. ${result.drug.discouraged ? "\u26a0 " : ""}${result.brand.name} \u2014 ${strengthLabel(result.strength)}`}
                 </div>
-                {result.doseText && (
-                  <div style={{ fontSize: 12, color: "#555", marginTop: 3, fontFamily: "monospace" }}>
-                    {`Dose derivation: ${result.formula || result.doseText}`}
+
+                {result.drug.medExplain && (
+                  <div style={{ fontSize: 12, color: "#1a4d7a", marginTop: 4, fontStyle: "italic" }}>
+                    {`"${result.drug.medExplain}"`}
                   </div>
                 )}
-                <div style={{ fontSize: 12, color: "#333", marginTop: 4, display: "flex", flexWrap: "wrap", gap: "4px 16px" }}>
-                  <span><strong>Sig:</strong> {result.sig}</span>
-                </div>
-                <div style={{ fontSize: 12, color: "#333", marginTop: 3, display: "flex", flexWrap: "wrap", gap: "4px 16px" }}>
-                  <span><strong>Frequency (clock times):</strong> {clockTimes}</span>
-                  <span><strong>Route:</strong> {route}</span>
-                  {!result.drug.topicalOnly && !result.isSingleCourse && <span><strong>Duration:</strong> {row.durationDays} days</span>}
-                  {result.totalVolMl && <span><strong>Dispense:</strong> {`\u2248${result.totalVolMl} mL`}</span>}
-                </div>
-                
-                {result.drug.adminNote && (
-                  <div style={{ fontSize: 12, color: "#333", marginTop: 4 }}>
-                    <strong>Administration &amp; counseling:</strong> {result.drug.adminNote}
-                  </div>
+
+                {result.drug.discouraged ? null : (
+                  <>
+                    {result.doseText && (
+                      <div style={{ fontSize: 12, color: "#555", marginTop: 5, fontFamily: "monospace" }}>
+                        {`Dose derivation: ${result.formula || result.doseText}`}
+                      </div>
+                    )}
+                    <div style={{ fontSize: 12, color: "#333", marginTop: 4, display: "flex", flexWrap: "wrap", gap: "4px 16px" }}>
+                      <span><strong>Give:</strong> {result.sig}</span>
+                    </div>
+                    <div style={{ fontSize: 12, color: "#333", marginTop: 3, display: "flex", flexWrap: "wrap", gap: "4px 16px" }}>
+                      <span><strong>Give it:</strong> {route}</span>
+                      <span><strong>Timing:</strong> {clockTimes}</span>
+                      {!result.drug.topicalOnly && !result.isSingleCourse && <span><strong>Duration:</strong> {row.durationDays} days{isOralAntibiotic ? " -- complete the FULL course" : ""}</span>}
+                      {result.totalVolMl && <span><strong>Dispense:</strong> {`\u2248${result.totalVolMl} mL`}</span>}
+                    </div>
+
+                    {result.drug.medWorking && (
+                      <div style={{ fontSize: 12, color: "#333", marginTop: 5 }}>
+                        <strong>You'll know it's working:</strong> {result.drug.medWorking}
+                      </div>
+                    )}
+
+                    {result.drug.adminNote && (
+                      <div style={{ fontSize: 12, color: "#333", marginTop: 4 }}>
+                        <strong>Administration &amp; counseling:</strong> {result.drug.adminNote}
+                      </div>
+                    )}
+
+                    {result.drug.medEffects && (
+                      <div style={{ fontSize: 12, color: "#333", marginTop: 4 }}>
+                        <strong>Watch for:</strong> {result.drug.medEffects}
+                      </div>
+                    )}
+
+                    {result.drug.medStorage && (
+                      <div style={{ fontSize: 12, color: "#555", marginTop: 4 }}>
+                        <strong>Storage:</strong> {result.drug.medStorage}
+                      </div>
+                    )}
+                  </>
                 )}
+
                 {result.precaution && (
                   <div style={{ fontSize: 12, color: "#8a1a1a", marginTop: 4, fontWeight: 500 }}>
                     {`\u26a0 ${result.precaution}`}
@@ -2504,6 +3215,12 @@ export default function RxCalculator() {
               </div>
             );
           })}
+
+          {rows.some((r) => { const res = calc(r); return !res.error && !res.belowAge && !res.belowWeight && !res.drug.discouraged; }) && (
+            <div style={{ fontSize: 11, color: "#666", marginTop: 4, paddingTop: 10, borderTop: "1px solid #eee" }}>
+              <strong>Storage &amp; supply (applies to every medicine above):</strong> store up, away, and out of sight of children. Supply an oral syringe sized to the dose (avoid a 10mL syringe for a 1mL dose) and keep it with that specific medicine. Explain how to obtain refills. Use mL only (never teaspoons), and close by having the caregiver show back how much they'll give and when.
+            </div>
+          )}
           
           <div className="no-print" style={{ display: "flex", gap: 10, marginTop: 20 }}>
             <button onClick={() => copyRxText(rows, calc, patientName, sex, ageLabel, weight, heightCm, ageMonths)} style={{ padding: "8px 18px", borderRadius: 6, border: "1px solid #1d6f5c", background: "#1d6f5c", color: "#fff", fontSize: 14, cursor: "pointer", fontWeight: 600 }}>
